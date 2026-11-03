@@ -33,7 +33,7 @@ window.SANAD = {
     heroEyebrow: { ar: "مجتمع الباحثات والباحثين العرب", en: "The community of Arab researchers" },
     heroTitle: { ar: "سند — لأن الطريق الأكاديمي أسهل مع بعض.", en: "Building a stronger research community, together." },
     heroText: {
-      ar: "مجتمع أكاديمي يقوده طلاب، يجمع طلاب الماجستير والدكتوراه وباحثي ما بعد الدكتوراه وأعضاء الهيئات التدريسية العرب، ليدعم بعضهم بعضًا أكاديميًا ومهنيًا وشخصيًا.",
+      ar: "مجتمع أكاديمي يقوده طلاب وطالبات، يجمع طلاب الماجستير والدكتوراه وباحثي ما بعد الدكتوراه وأعضاء الهيئات التدريسية العرب، ليدعم بعضهم بعضًا أكاديميًا ومهنيًا وشخصيًا.",
       en: "A student-led academic community connecting Arab Master's and PhD students, postdocs and faculty, so researchers can help each other succeed academically, professionally and personally."
     },
     ctaJoin: { ar: "انضموا للمجتمع", en: "Join the community" },
@@ -42,7 +42,7 @@ window.SANAD = {
     aboutKicker: { ar: "من نحن", en: "About us" },
     aboutTitle: { ar: "سند يعني أن يكون لك من تستند إليه", en: "SANAD means having someone to lean on" },
     aboutStory: {
-      ar: "بدأ سند كمبادرة محلية في معهد وايزمان للعلوم، ومنذ ذلك الحين توسّع ليصبح مجتمعًا يجمع طلابًا وباحثين من عدة جامعات ومؤسسات بحثية.",
+      ar: "بدأ سند كمبادرة محلية في معهد وايزمان للعلوم، ومنذ ذلك الحين توسّع ليصبح مجتمعًا يجمع طلابًا وطالبات، باحثين وباحثات، من عدة جامعات ومؤسسات بحثية.",
       en: "SANAD started as a local initiative at the Weizmann Institute of Science and has since grown into a community bringing together students and researchers from several universities and research institutions."
     },
     aboutChallenges: {
@@ -51,12 +51,12 @@ window.SANAD = {
     },
     missionLabel: { ar: "رسالتنا", en: "Mission" },
     mission: {
-      ar: "بناء مجتمع بحثي عربي قوي ومترابط وداعم، يساعد فيه الباحثون بعضهم بعضًا على النجاح.",
+      ar: "بناء مجتمع بحثي عربي قوي ومترابط وداعم، يساعد فيه الباحثات والباحثون بعضهم بعضًا على النجاح.",
       en: "To build a strong, supportive and interconnected Arab research community where researchers help each other succeed."
     },
     visionLabel: { ar: "رؤيتنا", en: "Vision" },
     vision: {
-      ar: "شبكة وطنية مستدامة ترافق الباحثين العرب في كل مراحل مسيرتهم: من الدراسات العليا، إلى ما بعد الدكتوراه، وحتى المناصب الأكاديمية.",
+      ar: "شبكة قطرية مستدامة ترافق الباحثات والباحثين العرب في كل مراحل مسيرتهم: من الدراسات العليا، إلى ما بعد الدكتوراه، وحتى المناصب الأكاديمية.",
       en: "A sustainable national network supporting Arab researchers at every stage: from graduate studies to postdoctoral research and faculty positions."
     },
     audienceTitle: { ar: "لمن سند؟", en: "Who is SANAD for?" },
@@ -93,7 +93,7 @@ window.SANAD = {
     register: { ar: "سجّلوا", en: "Register" },
 
     teamKicker: { ar: "الفريق", en: "Team" },
-    teamTitle: { ar: "مجتمع يقوده طلاب متطوّعون", en: "A community led by student volunteers" },
+    teamTitle: { ar: "مجتمع يقوده طلاب وطالبات متطوّعون", en: "A community led by student volunteers" },
     teamText: {
       ar: "يقوم سند على طلاب متطوّعين من جامعات مختلفة، يعملون معًا في فرق تنظّم اللقاءات، وتطوّر المبادرات، وتبني المجتمع. ثقافتنا منفتحة وتعاونية: كل عضو مدعوّ لأخذ المبادرة واقتراح المشاريع والتطوّع.",
       en: "SANAD is built by student volunteers from different universities, working together in teams that organize meetups, develop programs and grow the community. Our culture is open and collaborative: every member is invited to take initiative, propose projects and volunteer."
@@ -111,6 +111,8 @@ window.SANAD = {
     previous: { ar: "السابق", en: "Previous" },
     next: { ar: "التالي", en: "Next" },
     of: { ar: "من", en: "of" },
+    darkMode: { ar: "الوضع الداكن", en: "Dark mode" },
+    lightMode: { ar: "الوضع الفاتح", en: "Light mode" },
     watchOnInstagram: { ar: "على إنستغرام", en: "On Instagram" },
     website: { ar: "الموقع الشخصي", en: "Website" },
     faqKicker: { ar: "أسئلة شائعة", en: "FAQ" },
@@ -199,7 +201,7 @@ window.SANAD = {
     { name: { ar: "الانتماء", en: "Belonging" }, text: { ar: "علاقات حقيقية بين باحثين قد يشعرون بالعزلة في مؤسساتهم.", en: "Real connections between researchers who may feel isolated at their institutions." } },
     { name: { ar: "التعاون", en: "Collaboration" }, text: { ar: "تبادل المعرفة عبر التخصصات والجامعات.", en: "Sharing knowledge across disciplines and universities." } },
     { name: { ar: "التمكين", en: "Empowerment" }, text: { ar: "مهارات وثقة وعلاقات تصنع النجاح.", en: "Skills, confidence and connections to succeed." } },
-    { name: { ar: "التمثيل", en: "Representation" }, text: { ar: "حضور أوضح للباحثين العرب في الأكاديميا.", en: "Greater visibility for Arab researchers in academia." } },
+    { name: { ar: "التمثيل", en: "Representation" }, text: { ar: "حضور أوضح للباحثات والباحثين العرب في الأكاديميا.", en: "Greater visibility for Arab researchers in academia." } },
     { name: { ar: "الإتاحة", en: "Accessibility" }, text: { ar: "معلومات وإرشاد وفرص في متناول الجميع.", en: "Information, mentorship and opportunities within reach." } },
     { name: { ar: "التطوّع", en: "Volunteerism" }, text: { ar: "مجتمع مستدام بمسؤولية ومبادرة جماعية.", en: "A sustainable community built on shared responsibility." } }
   ],
@@ -350,66 +352,11 @@ window.SANAD = {
       ctaLink: { href: "https://forms.gle/gR5cryMK3obGCvY98", label: { ar: "سجّل/ي في «سندك»", en: "Register for Sanadak" } }
     },
     {
-      id: "networking",
-      icon: "network",
-      status: "active",
-      name: { ar: "التشبيك والتعاون", en: "Networking & collaboration" },
-      text: { ar: "شبكة لباحثي ما بعد الدكتوراه العرب مع لقاءات شهرية عبر الإنترنت، وربط بين باحثين ذوي اهتمامات مشتركة.", en: "A network for Arab postdocs with monthly online meetings, and connections between researchers with shared interests." },
-      intro: {
-        ar: "نربط بين باحثات وباحثين عرب من مختلف التخصصات والمؤسسات، لتشجيع التعاون وتبادل المعرفة وبناء شبكة مهنية داعمة.",
-        en: "We connect Arab researchers across disciplines and institutions to encourage collaboration, knowledge-sharing and a supportive professional network."
-      },
-      sections: [
-        {
-          title: { ar: "ما الذي نقوم به", en: "What we do" },
-          items: [
-            { ar: "شبكة لباحثي ما بعد الدكتوراه العرب", en: "A network for Arab postdoctoral researchers" },
-            { ar: "لقاءات شهرية عبر الإنترنت لباحثي ما بعد الدكتوراه", en: "Monthly online meetings for postdocs" },
-            { ar: "لقاءات تشبيك محلية ووطنية", en: "Local and national networking gatherings" },
-            { ar: "ربط بين باحثين ذوي اهتمامات بحثية مشتركة", en: "Connecting researchers with shared research interests" },
-            { ar: "فرص للقاء علماء عرب ذوي خبرة", en: "Opportunities to meet established Arab scientists" }
-          ]
-        }
-      ],
-      cta: "join"
-    },
-    {
-      id: "development",
-      icon: "growth",
-      status: "active",
-      name: { ar: "التطوير الأكاديمي والمهني", en: "Academic & professional development" },
-      text: { ar: "ندوات حول الماجستير والدكتوراه وما بعد الدكتوراه وسوق العمل الأكاديمي، وورشات في كتابة السيرة الذاتية، وعرض الأبحاث، واستخدام أدوات الذكاء الاصطناعي.", en: "Panels on Master's, PhD, postdoc and faculty applications, plus workshops on CVs, research presentations and using AI tools." },
-      intro: {
-        ar: "ننظّم ونخطّط فعاليات تعليمية ترافق الباحثين في كل مرحلة من مسيرتهم الأكاديمية، من التفكير بالدراسات العليا وحتى التقديم لوظائف أكاديمية.",
-        en: "We organize and plan educational events for every stage of an academic path, from considering graduate school to applying for faculty positions."
-      },
-      sections: [
-        {
-          title: { ar: "ندوات", en: "Panels" },
-          items: [
-            { ar: "دراسة الماجستير والدكتوراه", en: "Master's and PhD studies" },
-            { ar: "التقديم لما بعد الدكتوراه والتوجيه المهني", en: "Postdoc applications and career guidance" },
-            { ar: "سوق العمل الأكاديمي والتقديم لوظائف هيئة تدريسية", en: "The academic job market and faculty applications" }
-          ]
-        },
-        {
-          title: { ar: "ورشات وجلسات", en: "Workshops & sessions" },
-          items: [
-            { ar: "كتابة السيرة الذاتية", en: "CV writing" },
-            { ar: "عرض الأبحاث والتواصل العلمي", en: "Presenting and communicating research" },
-            { ar: "استخدام أدوات الذكاء الاصطناعي بفعالية", en: "Using AI tools effectively" },
-            { ar: "جلسات يعرض فيها الباحثون أبحاثهم ويعرّفون بأنفسهم", en: "Sessions where researchers present their work and introduce themselves" }
-          ]
-        }
-      ],
-      cta: "join"
-    },
-    {
       id: "spotlight",
       icon: "spotlight",
       status: "active",
       name: { ar: "باحث تحت المجهر", en: "Researcher in the Spotlight" },
-      text: { ar: "مقابلات ومحتوى يسلّط الضوء على باحثين عرب وإنجازاتهم ومسيرتهم، لإلهام الأجيال القادمة.", en: "Interviews and stories highlighting Arab researchers, their achievements and journeys, to inspire the next generation." },
+      text: { ar: "مقابلات ومحتوى يسلّط الضوء على باحثات وباحثين عرب وإنجازاتهم ومسيرتهم، لإلهام الأجيال القادمة.", en: "Interviews and stories highlighting Arab researchers, their achievements and journeys, to inspire the next generation." },
       intro: {
         ar: "مبادرة تسلّط الضوء على باحثات وباحثين عرب: إنجازاتهم العلمية، وتجاربهم الأكاديمية، ومسيرتهم الشخصية — لزيادة حضور العلماء العرب وإلهام الأجيال القادمة.",
         en: "An initiative highlighting Arab researchers: their scientific achievements, academic experiences and personal journeys, to increase the visibility of Arab scientists and inspire the next generation."
@@ -419,6 +366,37 @@ window.SANAD = {
       cta: "contact",
       ctaTitle: { ar: "تعرفون باحثًا أو باحثة يستحقون الضوء؟", en: "Know a researcher who deserves the spotlight?" },
       ctaText: { ar: "راسلونا واقترحوا اسمًا لمقابلة قادمة.", en: "Get in touch and suggest someone for a future interview." }
+    },
+    {
+      id: "development",
+      icon: "growth",
+      status: "active",
+      name: { ar: "التطوير الأكاديمي والمهني", en: "Academic & professional development" },
+      text: { ar: "ندوات حول الدكتوراه وورشات عملية، مثل استخدام أدوات الذكاء الاصطناعي في البحث العلمي، ترافق الباحثات والباحثين في كل مرحلة.", en: "PhD panels and hands-on workshops, such as using AI tools in research, for every stage of an academic path." },
+      intro: {
+        ar: "ننظّم ونخطّط فعاليات تعليمية ترافق الباحثات والباحثين في كل مرحلة من مسيرتهم الأكاديمية، من التفكير بالدراسات العليا وحتى التقديم لوظائف أكاديمية.",
+        en: "We organize and plan educational events for every stage of an academic path, from considering graduate school to applying for faculty positions."
+      },
+      sections: [
+        {
+          title: { ar: "ما قمنا به", en: "What we've done" },
+          items: [
+            { ar: "ورشة حول استخدام أدوات الذكاء الاصطناعي في البحث العلمي", en: "A workshop on using AI tools in research" },
+            { ar: "ندوات حول الدكتوراه", en: "Panels about doing a PhD" }
+          ]
+        },
+        {
+          title: { ar: "ما نخطّط له", en: "What we're planning" },
+          items: [
+            { ar: "ندوات حول الماجستير وما بعد الدكتوراه", en: "Panels on Master's studies and postdocs" },
+            { ar: "سوق العمل الأكاديمي والتقديم لوظائف هيئة تدريسية", en: "The academic job market and faculty applications" },
+            { ar: "كتابة السيرة الذاتية", en: "CV writing" },
+            { ar: "عرض الأبحاث والتواصل العلمي", en: "Presenting and communicating research" },
+            { ar: "جلسات يعرض فيها الباحثون أبحاثهم ويعرّفون بأنفسهم", en: "Sessions where researchers present their work and introduce themselves" }
+          ]
+        }
+      ],
+      cta: "join"
     },
     {
       id: "partnerships",
@@ -444,6 +422,61 @@ window.SANAD = {
       cta: "contact",
       ctaTitle: { ar: "مهتمون بالشراكة؟", en: "Interested in partnering?" },
       ctaText: { ar: "يسعدنا التواصل مع مؤسسات ومبادرات تشاركنا الرؤية.", en: "We'd love to hear from institutions and initiatives that share our vision." }
+    },
+    {
+      id: "networking",
+      icon: "network",
+      status: "planned",
+      name: { ar: "التشبيك والتعاون", en: "Networking & collaboration" },
+      text: { ar: "نخطّط لربط باحثات وباحثين عرب من مختلف التخصصات والمؤسسات، لتشجيع التعاون وبناء شبكة مهنية داعمة.", en: "We plan to connect Arab researchers across disciplines and institutions to encourage collaboration and build a supportive professional network." },
+      intro: {
+        ar: "نخطّط لربط باحثات وباحثين عرب من مختلف التخصصات والمؤسسات، لتشجيع التعاون وتبادل المعرفة وبناء شبكة مهنية داعمة.",
+        en: "We plan to connect Arab researchers across disciplines and institutions to encourage collaboration, knowledge-sharing and a supportive professional network."
+      },
+      sections: [
+        {
+          title: { ar: "ما نخطّط له", en: "What we plan" },
+          items: [
+            { ar: "شبكة لباحثي ما بعد الدكتوراه العرب", en: "A network for Arab postdoctoral researchers" },
+            { ar: "لقاءات شهرية عبر الإنترنت لباحثي ما بعد الدكتوراه", en: "Monthly online meetings for postdocs" },
+            { ar: "لقاءات تشبيك محلية وقطرية", en: "Local and national networking gatherings" },
+            { ar: "ربط بين باحثين ذوي اهتمامات بحثية مشتركة", en: "Connecting researchers with shared research interests" },
+            { ar: "فرص للقاء علماء عرب ذوي خبرة", en: "Opportunities to meet established Arab scientists" }
+          ]
+        }
+      ],
+      cta: "join"
+    },
+    {
+      id: "directory",
+      icon: "directory",
+      status: "planned",
+      name: { ar: "دليل أعضاء سند", en: "SANAD member directory" },
+      text: { ar: "قاعدة بيانات لأعضاء المجتمع، يمكن البحث فيها حسب المجال أو الجامعة أو المرحلة الأكاديمية، لإيجاد شركاء للتعاون ومن يمكن الاستشارة معهم.", en: "A searchable database of community members, by field, university or academic stage, to find collaborators and people to consult." },
+      intro: {
+        ar: "نخطّط لبناء دليل لأعضاء مجتمع سند: صفحة تعريفية قصيرة لكل عضو وعضوة، يمكن البحث فيها حسب المجال أو الجامعة أو المرحلة الأكاديمية. هدفه أن يسهّل على الباحثات والباحثين العثور على بعضهم البعض، للتعاون أو للاستشارة أو لتبادل التجارب.",
+        en: "We plan to build a directory of SANAD members: a short profile for each member, searchable by field, university or academic stage. The goal is to make it easy for researchers to find each other, to collaborate, ask for advice or share experiences."
+      },
+      sections: [
+        {
+          title: { ar: "ما الفكرة؟", en: "The idea" },
+          items: [
+            { ar: "صفحة تعريفية لكل عضو/ة: الجامعة، المرحلة الأكاديمية، المجال والاهتمامات البحثية", en: "A profile for each member: university, academic stage, field and research interests" },
+            { ar: "بحث حسب المجال أو الجامعة أو المرحلة الأكاديمية", en: "Search by field, university or academic stage" },
+            { ar: "إيجاد شركاء للتعاون، ومرشدين، ومن مرّ بتجربة مشابهة", en: "Find collaborators, mentors and people who've been through a similar path" }
+          ]
+        },
+        {
+          title: { ar: "الخصوصية", en: "Privacy" },
+          items: [
+            { ar: "الانضمام إلى الدليل اختياري", en: "Joining the directory is optional" },
+            { ar: "كل عضو/ة يقرّر ما يظهر في صفحته/ا", en: "Each member decides what appears on their profile" }
+          ]
+        }
+      ],
+      cta: "contact",
+      ctaTitle: { ar: "تريدون المساهمة في بنائه؟", en: "Want to help build it?" },
+      ctaText: { ar: "إن كانت لديكم أفكار أو خبرة في بناء مثل هذه الأدوات، يسعدنا تواصلكم.", en: "If you have ideas or experience building tools like this, we'd love to hear from you." }
     }
   ],
 
@@ -454,7 +487,7 @@ window.SANAD = {
   faq: [
     {
       q: { ar: "من يمكنه الانضمام إلى سند؟", en: "Who can join SANAD?" },
-      a: { ar: "طلاب الماجستير والدكتوراه، وباحثو ما بعد الدكتوراه، وأعضاء الهيئات التدريسية العرب في الجامعات والمؤسسات البحثية في البلاد، وكذلك من يفكّرون بالتوجّه إلى الدراسات العليا.", en: "Arab Master's and PhD students, postdocs and faculty at universities and research institutions in Israel, as well as anyone considering graduate studies." }
+      a: { ar: "طلاب وطالبات الماجستير والدكتوراه، وباحثو ما بعد الدكتوراه، وأعضاء الهيئات التدريسية العرب في الجامعات والمؤسسات البحثية في البلاد، وكذلك من يفكّرون بالتوجّه إلى الدراسات العليا.", en: "Arab Master's and PhD students, postdocs and faculty at universities and research institutions in Israel, as well as anyone considering graduate studies." }
     },
     {
       q: { ar: "ما المجالات التي يغطّيها سند؟", en: "Which fields does SANAD cover?" },
@@ -484,7 +517,7 @@ window.SANAD = {
     },
     {
       q: { ar: "كيف أقترح باحثًا أو باحثة لـ«باحث تحت المجهر»؟", en: "How do I suggest someone for «Researcher in the Spotlight»?" },
-      a: { ar: "راسلونا على إنستغرام أو بالبريد الإلكتروني، وأخبرونا عن الباحث/ة ولماذا تستحق قصته أن تُروى.", en: "Message us on Instagram or by email, and tell us about the researcher and why their story deserves to be told." },
+      a: { ar: "راسلونا على إنستغرام أو بالبريد الإلكتروني، وأخبرونا عن الباحث/ة ولماذا تستحق قصتهم أن تُروى.", en: "Message us on Instagram or by email, and tell us about the researcher and why their story deserves to be told." },
       link: { href: "program.html?p=spotlight", label: { ar: "باحث تحت المجهر", en: "Researcher in the Spotlight" } }
     },
     {

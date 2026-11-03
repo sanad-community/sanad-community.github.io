@@ -20,6 +20,7 @@
     network: '<circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="12" cy="10" r="2"/><path d="M6.7 7l3.6 2M17.3 7l-3.6 2M12 12v4"/>',
     growth: '<path d="M4 20h16M7 16v-4M12 16V8M17 16V5"/>',
     spotlight: '<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/>',
+    directory: '<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M7.5 17.5c.8-2 2.5-3 4.5-3s3.7 1 4.5 3"/>',
     handshake: '<path d="M3 11l4-4 3 2 3-2 4 0 4 4"/><path d="M7 7l-4 4 6 6c.8.8 2 .8 2.8 0l5.7-5.7"/><path d="M10 14l2 2M12.5 11.5l2 2"/>',
     gathering: '<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/>'
   };
@@ -364,6 +365,7 @@
     lang = lang === "ar" ? "en" : "ar";
     try { localStorage.setItem("sanad-lang", lang); } catch (e) {}
     render();
+    updateThemeButton();
   });
 
   // Lightbox for gallery photos, with previous/next
@@ -407,6 +409,30 @@
     if (e.key === "ArrowRight") step(rtl ? -1 : 1);
   });
 
+  // Floating light/dark toggle; follows the system setting until the visitor picks a theme
+  const MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  const SUN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  const themeBtn = document.createElement("button");
+  themeBtn.type = "button";
+  themeBtn.className = "theme-toggle";
+  document.body.appendChild(themeBtn);
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  const isDark = () => (document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : darkQuery.matches);
+  function updateThemeButton() {
+    const dark = isDark();
+    themeBtn.innerHTML = dark ? SUN : MOON;
+    const label = ui(dark ? "lightMode" : "darkMode");
+    themeBtn.setAttribute("aria-label", label);
+    themeBtn.title = label;
+  }
+  themeBtn.addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem("sanad-theme", next); } catch (e) {}
+    updateThemeButton();
+  });
+  darkQuery.addEventListener("change", updateThemeButton);
+
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.getElementById("nav");
   toggle.addEventListener("click", () => {
@@ -418,4 +444,5 @@
   });
 
   render();
+  updateThemeButton();
 })();
