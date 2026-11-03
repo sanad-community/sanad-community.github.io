@@ -1,0 +1,157 @@
+{
+  "faq": [
+    {
+      "q": {
+        "ar": "من يمكنه الانضمام إلى سند؟",
+        "en": "Who can join SANAD?"
+      },
+      "a": {
+        "ar": "طلاب وطالبات الماجستير والدكتوراه، وباحثو ما بعد الدكتوراه، وأعضاء الهيئات التدريسية العرب في الجامعات والمؤسسات البحثية في البلاد، وكذلك من يفكّرون بالتوجّه إلى الدراسات العليا.",
+        "en": "Arab Master's and PhD students, postdocs and faculty at universities and research institutions in Israel, as well as anyone considering graduate studies."
+      },
+      "link": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "q": {
+        "ar": "ما المجالات التي يغطّيها سند؟",
+        "en": "Which fields does SANAD cover?"
+      },
+      "a": {
+        "ar": "يغطّي سند جميع مجالات العلوم والتكنولوجيا: علوم الحاسوب، الرياضيات، الفيزياء، الكيمياء، الأحياء، الطب، الهندسة والمجالات القريبة منها.",
+        "en": "SANAD covers all STEM fields: computer science, mathematics, physics, chemistry, biology, medicine, engineering and related areas."
+      },
+      "link": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "q": {
+        "ar": "أنا طالب/ة بكالوريوس، هل يمكنني الانضمام؟",
+        "en": "I'm an undergraduate. Can I join?"
+      },
+      "a": {
+        "ar": "نعم، إن كنت تفكّر بالدراسات العليا أو بمسيرة بحثية. من أهدافنا سدّ الفجوة بين البكالوريوس والبحث العلمي، وستجد في سند من يجيب عن أسئلتك.",
+        "en": "Yes, if you're considering graduate studies or a research career. Bridging the gap between undergraduate studies and research is one of our goals, and you'll find people happy to answer your questions."
+      },
+      "link": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "q": {
+        "ar": "ماذا يحدث بعد أن أملأ نموذج التسجيل؟",
+        "en": "What happens after I fill in the sign-up form?"
+      },
+      "a": {
+        "ar": "نضيفك إلى مجتمع سند على واتساب، حيث نعلن عن الفعاليات ونتواصل ونتشارك الفرص، ونعرّفك على مجتمع جامعتك المحلي إن وُجد.",
+        "en": "We add you to the SANAD WhatsApp community, where we announce events, talk and share opportunities, and connect you with your university's local community if there is one."
+      },
+      "link": {
+        "href": "joinForm",
+        "label": {
+          "ar": "سجّلوا في المجتمع",
+          "en": "Sign up to join"
+        }
+      }
+    },
+    {
+      "q": {
+        "ar": "هل الانضمام مجاني؟",
+        "en": "Is it free to join?"
+      },
+      "a": {
+        "ar": "نعم. سند مجتمع تطوّعي يقوده الطلاب، والانضمام إليه مجاني.",
+        "en": "Yes. SANAD is a volunteer, student-led community, and joining is free."
+      },
+      "link": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "q": {
+        "ar": "جامعتي ليست في القائمة، ماذا أفعل؟",
+        "en": "My university isn't listed. What can I do?"
+      },
+      "a": {
+        "ar": "انضموا إلينا على أي حال! سند يتوسّع باستمرار، وإن كنتم مهتمين ببناء مجتمع محلي في جامعتكم فتواصلوا معنا وسنساعدكم في البداية.",
+        "en": "Join anyway! SANAD keeps growing, and if you'd like to build a local community at your university, get in touch and we'll help you get started."
+      },
+      "link": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "q": {
+        "ar": "كيف أتطوّع في سند؟",
+        "en": "How can I volunteer?"
+      },
+      "a": {
+        "ar": "نموذج التطوّع متاح داخل مجتمع سند على واتساب. سجّلوا في المجتمع أولًا، ثم اختاروا الفريق الذي يناسبكم: التواصل الاجتماعي، اللقاءات الشهرية أو الإرشاد الأكاديمي.",
+        "en": "The volunteer form is shared in the SANAD WhatsApp community. Sign up first, then pick the team that suits you: social media, monthly meetups or academic mentoring."
+      },
+      "link": {
+        "href": "team.html",
+        "label": {
+          "ar": "تعرّفوا على الفرق",
+          "en": "Meet the teams"
+        }
+      }
+    },
+    {
+      "q": {
+        "ar": "كيف أقترح باحثًا أو باحثة لـ«باحث تحت المجهر»؟",
+        "en": "How do I suggest someone for «Researcher in the Spotlight»?"
+      },
+      "a": {
+        "ar": "راسلونا على إنستغرام أو بالبريد الإلكتروني، وأخبرونا عن الباحث/ة ولماذا تستحق قصتهم أن تُروى.",
+        "en": "Message us on Instagram or by email, and tell us about the researcher and why their story deserves to be told."
+      },
+      "link": {
+        "href": "program.html?p=spotlight",
+        "label": {
+          "ar": "باحث تحت المجهر",
+          "en": "Researcher in the Spotlight"
+        }
+      }
+    },
+    {
+      "q": {
+        "ar": "نحن مؤسسة أو مبادرة ونريد التعاون مع سند",
+        "en": "We're an institution or initiative and want to work with SANAD"
+      },
+      "a": {
+        "ar": "يسعدنا ذلك! نسعى إلى بناء شراكات مع مؤسسات أكاديمية وتعليمية ومبادرات مجتمعية. راسلونا بالبريد الإلكتروني.",
+        "en": "We'd love that! We build partnerships with academic and educational institutions and community initiatives. Email us to start the conversation."
+      },
+      "link": {
+        "href": "program.html?p=partnerships",
+        "label": {
+          "ar": "الشراكات والتواصل",
+          "en": "Partnerships & outreach"
+        }
+      }
+    }
+  ]
+}

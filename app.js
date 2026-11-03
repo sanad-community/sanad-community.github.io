@@ -1,5 +1,20 @@
-(function () {
+(async function () {
   const C = window.SANAD;
+  // Content lives in data/*.json (edited through Pages CMS); merge it in before rendering
+  const DATA_FILES = ["site", "team", "programs", "communities", "spotlight", "faq", "home", "news"];
+  try {
+    const parts = await Promise.all(DATA_FILES.map((f) => fetch(`data/${f}.json`, { cache: "no-cache" }).then((r) => {
+      if (!r.ok) throw new Error(f);
+      return r.json();
+    })));
+    parts.forEach((p) => Object.assign(C, p));
+  } catch (e) {
+    document.body.insertAdjacentHTML("afterbegin", '<p style="margin:0;padding:12px 16px;background:#fbeed6;color:#7a4b00;text-align:center">Content could not be loaded. Open the site through a web server (e.g. <code>python3 -m http.server</code>), not as a file.</p>');
+    return;
+  }
+  // A person counts only if they have a name; empty leads/members from the editor are dropped
+  const named = (p) => p && p.name && (p.name.ar || p.name.en);
+  C.teams.forEach((tm) => { tm.lead = named(tm.lead) ? tm.lead : null; tm.members = (tm.members || []).filter(named); });
   let lang = "ar";
   try { lang = localStorage.getItem("sanad-lang") || "ar"; } catch (e) {}
 
@@ -35,9 +50,12 @@
 
   const icon = (k) => `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${ICONS[k] || ""}</svg>`;
 
-  const fmtDate = (d) => {
-    try { return new Date(d + "T00:00:00").toLocaleDateString(lang === "ar" ? "ar" : "en-GB", { day: "numeric", month: "long", year: "numeric" }); }
-    catch (e) { return d; }
+
+  // Short university name for narrow cards (e.g. "HUJI"), matched by the university's English name
+  const shortAffiliation = (aff) => {
+    if (!aff) return "";
+    const c = C.communities.find((x) => x.name.en === aff.en);
+    return c && c.short ? t(c.short) : t(aff);
   };
 
   // Accepts a name (string or {ar,en}) or a member object
@@ -60,7 +78,7 @@
     const m = asMember(p);
     const name = t(m.name);
     const avatar = photo(m, "avatar");
-    const lines = [sub, t(m.role), t(m.affiliation)].filter(Boolean).map((x) => `<span>${esc(x)}</span>`).join("");
+    const lines = [sub, t(m.role), shortAffiliation(m.affiliation)].filter(Boolean).map((x) => `<span>${esc(x)}</span>`).join("");
     return `<div class="person${extraClass ? " " + extraClass : ""}">${avatar}<div><strong>${esc(name)}${profileLink(m)}</strong>${lines}</div></div>`;
   }
 
@@ -68,7 +86,7 @@
   function member(p, tag, extraClass) {
     const m = asMember(p);
     const name = t(m.name);
-    const lines = [t(m.role), t(m.affiliation)].filter(Boolean).map((x) => `<span>${esc(x)}</span>`).join("");
+    const lines = [t(m.role), shortAffiliation(m.affiliation)].filter(Boolean).map((x) => `<span>${esc(x)}</span>`).join("");
     return `<figure class="member${extraClass ? " " + extraClass : ""}">
       ${photo(m, "member-photo")}
       ${tag ? `<span class="member-tag">${esc(tag)}</span>` : ""}
@@ -77,6 +95,33 @@
   }
 
   function renderHome() {
+
+    // News: first item featured with image, the rest as a compact list
+    const news = C.news || [];
+    const newsSection = $("#news");
+    if (newsSection) newsSection.hidden = !news.length;
+    if (news.length) {
+      const [top, ...rest] = news;
+      const meta = (n) => `<div class="news-meta"><span class="news-tag">${esc(t(n.tag))}</span>${t(n.date) ? `<span class="news-date">${esc(t(n.date))}</span>` : ""}</div>`;
+      set("#newsList", `
+        <a class="news-featured" href="${esc(top.link || "#")}">
+          ${top.image ? `<div class="news-featured-img"><img src="${esc(top.image)}" alt="" loading="lazy"></div>` : ""}
+          <div class="news-featured-body">
+            ${t(top.badge) ? `<span class="announce-badge"><span class="pulse" aria-hidden="true"></span>${esc(t(top.badge))}</span>` : ""}
+            ${meta(top)}
+            <h3>${esc(t(top.title))}</h3>
+            <p>${esc(t(top.text))}</p>
+            <span class="btn btn-primary">${esc(t(top.linkLabel) || ui("readMore"))}</span>
+          </div>
+        </a>
+        <ul class="news-list">${rest.map((n) => `
+          <li><a class="news-item" href="${esc(n.link || "#")}">
+            <span class="news-icon">${icon(n.icon)}</span>
+            <span class="news-item-body">${meta(n)}<strong>${esc(t(n.title))}</strong><span class="news-text">${esc(t(n.text))}</span></span>
+            <span class="news-arrow" aria-hidden="true">←</span>
+          </a></li>`).join("")}
+        </ul>`);
+    }
 
     set("#audience", C.audience.map((a) => `<li>${esc(t(a))}</li>`).join(""));
     set("#values", C.values.map((v) => `<li><strong>${esc(t(v.name))}</strong><span>${esc(t(v.text))}</span></li>`).join(""));
@@ -89,23 +134,9 @@
 
     set("#programList", C.programs.map(programCard).join(""));
 
-    const up = C.events.upcoming;
-    set("#upcoming", up.length
-      ? up.map((e) => `
-        <article class="event">
-          ${e.date ? `<time>${esc(fmtDate(e.date))}</time>` : ""}
-          <h4>${esc(t(e.title))}</h4>
-          ${e.place ? `<p class="muted">${esc(t(e.place))}</p>` : ""}
-          ${e.text ? `<p>${esc(t(e.text))}</p>` : ""}
-          ${e.link ? ext(e.link, ui("register"), "btn btn-small btn-primary") : ""}
-        </article>`).join("")
-      : `<div class="empty"><p>${esc(ui("upcomingEmpty"))}</p>${ext(C.links.instagram, "@we.are.sanad", "btn btn-small btn-ghost")}</div>`);
-
-    set("#past", C.events.past.map((e) => `
-      <li><h4>${esc(t(e.title))}</h4><p class="muted">${esc(t(e.place))}${e.date ? " · " + esc(fmtDate(e.date)) : ""}</p><p>${esc(t(e.text))}</p></li>`).join(""));
 
     set("#faqList", (C.faq || []).map((f) => {
-      const href = f.link && (f.link.href === "joinForm" ? C.links.joinForm : f.link.href);
+      const href = f.link && f.link.href && (f.link.href === "joinForm" ? C.links.joinForm : f.link.href);
       const external = href && /^https?:/.test(href);
       return `<details class="faq-item">
         <summary>${esc(t(f.q))}</summary>
@@ -115,9 +146,19 @@
       </details>`;
     }).join(""));
 
-    set("#teamList",
-      person(C.founder, ui("founder")) +
-      C.teams.filter((tm) => tm.lead).map((tm) => person(tm.lead, t(tm.name))).join(""));
+    // Team overview: overlapping avatars + counts, computed from the team data
+    const people = [C.founder, ...C.teams.flatMap((tm) => [tm.lead, ...tm.members].filter(Boolean))].map(asMember);
+    const unis = new Set(people.map((p) => p.affiliation && p.affiliation.en).filter(Boolean));
+    const teamsWithPeople = C.teams.filter((tm) => tm.lead || tm.members.length);
+    const shown = [...people.filter((p) => p.photo), ...people.filter((p) => !p.photo)].slice(0, 9);
+    set("#teamList", `
+      <div class="avatar-stack">${shown.map((p) => photo(p, "avatar")).join("")}${people.length > shown.length ? `<span class="avatar avatar-more">+${people.length - shown.length}</span>` : ""}</div>
+      <div class="team-stats">
+        <div><strong>${people.length}</strong><span>${esc(ui("statVolunteers"))}</span></div>
+        <div><strong>${teamsWithPeople.length}</strong><span>${esc(ui("statTeams"))}</span></div>
+        <div><strong>${unis.size}</strong><span>${esc(ui("statUniversities"))}</span></div>
+      </div>
+      <ul class="chips team-chips">${teamsWithPeople.map((tm) => `<li><a href="team.html#team-${esc(tm.id)}">${esc(t(tm.name))}</a></li>`).join("")}</ul>`);
   }
 
   // Whole card links to the program's page
@@ -147,10 +188,10 @@
     return `<div class="announce">
       ${an.poster ? `<div class="announce-poster"><button type="button" class="gallery-item" data-index="0" data-src="${esc(an.poster)}" data-caption="${esc(t(an.title))}"><img src="${esc(an.poster)}" alt="${esc(t(an.title))}"></button></div>` : ""}
       <div class="announce-body">
-        ${an.badge ? `<span class="announce-badge"><span class="pulse" aria-hidden="true"></span>${esc(t(an.badge))}</span>` : ""}
+        ${t(an.badge) ? `<span class="announce-badge"><span class="pulse" aria-hidden="true"></span>${esc(t(an.badge))}</span>` : ""}
         <h2>${esc(t(an.title))}</h2>
         <p>${esc(t(an.text))}</p>
-        ${an.link ? ext(an.link, t(an.label), "btn btn-primary") : ""}
+        ${an.link ? (an.link.startsWith("mailto:") ? `<a class="btn btn-primary" href="${esc(an.link)}">${esc(t(an.label))}</a>` : ext(an.link, t(an.label), "btn btn-primary")) : ""}
       </div>
     </div>`;
   }
@@ -174,12 +215,12 @@
       <h1>${esc(t(p.name))}</h1>
       <p class="lead narrow">${esc(t(p.intro || p.text))}</p>
       ${note ? `<p class="status-note status-note-${p.status}">${esc(ui(note))}</p>` : ""}
-      ${p.announcement ? announcement(p.announcement) : ""}`);
+      ${(p.announcements || []).map(announcement).join("")}`);
 
     const team = p.team && C.teams.find((tm) => tm.id === p.team);
     const unis = C.communities;
     set("#programBody", [
-      p.gallery ? `<div class="program-block">${gallery(p.gallery)}</div>` : "",
+      p.gallery && p.gallery.length ? `<div class="program-block">${gallery(p.gallery)}</div>` : "",
       (p.sections || []).length ? `<div class="program-sections">${p.sections.map((sec) => `
         <div class="program-section">
           <h2>${esc(t(sec.title))}</h2>
@@ -198,7 +239,7 @@
     set("#programCta", `
       <h2>${esc(t(p.ctaTitle) || ui(join ? "ctaJoinTitle" : "ctaContactTitle"))}</h2>
       <p>${esc(t(p.ctaText) || ui(join ? "ctaJoinText" : "ctaContactText"))}</p>
-      <div class="actions">${p.ctaLink ? ext(p.ctaLink.href, t(p.ctaLink.label), "btn btn-primary") + b.ig : join ? b.join + b.whatsapp + b.ig : b.ig + b.mail}</div>`);
+      <div class="actions">${p.ctaLink && p.ctaLink.href ? ext(p.ctaLink.href, t(p.ctaLink.label), "btn btn-primary") + b.ig : join ? b.join + b.whatsapp + b.ig : b.ig + b.mail}</div>`);
 
     set("#otherPrograms", C.programs.filter((x) => x !== p).map(programCard).join(""));
   }
@@ -242,8 +283,18 @@
 
   }
 
+  function renderPastVolunteers() {
+    const list = C.pastVolunteers || [];
+    const section = $("#past-volunteers");
+    if (section) section.hidden = !list.length;
+    set("#pastVolunteers", list.map((p) => `<li>
+      <span class="avatar">${esc(t(p.name).charAt(0))}</span>
+      <span><strong>${esc(t(p.name))}</strong>${t(p.team) ? `<small>${esc(t(p.team))}</small>` : ""}</span>
+    </li>`).join(""));
+  }
+
   function renderSpotlight() {
-    const eps = C.spotlight || [];
+    const eps = (C.videos || []).filter((v) => v.video);
     // Returns { src, kind } for YouTube (video or Shorts) and Instagram links
     const embed = (url) => {
       const u = String(url || "");
@@ -266,7 +317,7 @@
         ${frame}
         <figcaption>
           <span class="episode-num">${esc(ui("episode"))} ${i + 1}</span>
-          ${e.name ? `<strong>${esc(t(e.name))}</strong>` : ""}
+          ${t(e.name) ? `<strong>${esc(t(e.name))}</strong>` : ""}
           ${cap ? `<span class="episode-meta">${cap}</span>` : ""}
           ${igLink}
         </figcaption>
@@ -345,7 +396,16 @@
       L.email && { k: "email", href: "mailto:" + L.email, label: "Email", handle: L.email }
     ].filter(Boolean);
     const link = (c, inner, cls) => `<a class="${cls}" href="${esc(c.href)}"${c.k === "email" ? "" : ' target="_blank" rel="noopener"'}>${inner}</a>`;
-    set("#findUs", channels.map((c) => link(c, `${socialIcon(c.k)}<span><strong>${esc(c.label)}</strong><small>${esc(c.handle)}</small></span>`, "find-card")).join(""));
+    const COPY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>';
+    set("#findUs", channels.map((c) => {
+      const inner = `${socialIcon(c.k)}<span><strong>${esc(c.label)}</strong><small>${esc(c.handle)}</small></span>`;
+      // Email card gets a copy button next to the mailto link (a button can't sit inside a link)
+      if (c.k === "email") return `<div class="find-card find-card-email">
+          ${link(c, inner, "find-card-main")}
+          <button type="button" class="copy-btn" data-copy="${esc(L.email)}" aria-label="${esc(ui("copyEmail"))}" title="${esc(ui("copyEmail"))}">${COPY}<span class="copy-label">${esc(ui("copy"))}</span></button>
+        </div>`;
+      return link(c, inner, "find-card");
+    }).join(""));
     set("#social", channels.map((c) => link(c, `${socialIcon(c.k)}<span>${esc(c.label)}</span>`, "social-link")).join(""));
   }
 
@@ -355,6 +415,7 @@
     document.querySelectorAll("[data-t]").forEach((el) => { el.textContent = ui(el.dataset.t); });
     renderHome();
     renderTeamPage();
+    renderPastVolunteers();
     renderPrograms(); // before renderSpotlight: the program page creates #episodes
     renderSpotlight();
     initCarousels();
@@ -409,6 +470,79 @@
     if (e.key === "ArrowRight") step(rtl ? -1 : 1);
   });
 
+  // Copy buttons (e.g. the email address)
+  async function copyText(text) {
+    try { await navigator.clipboard.writeText(text); return true; }
+    catch (e) {
+      // fallback for pages opened as local files
+      const ta = document.createElement("textarea");
+      ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      let ok = false;
+      try { ok = document.execCommand("copy"); } catch (err) {}
+      ta.remove();
+      return ok;
+    }
+  }
+  document.addEventListener("click", async (e) => {
+    const btn = e.target.closest(".copy-btn");
+    if (!btn) return;
+    const ok = await copyText(btn.dataset.copy);
+    const label = btn.querySelector(".copy-label");
+    label.textContent = ui(ok ? "copied" : "copyFailed");
+    btn.classList.toggle("is-copied", ok);
+    clearTimeout(btn._t);
+    btn._t = setTimeout(() => { label.textContent = ui("copy"); btn.classList.remove("is-copied"); }, 2000);
+  });
+
+  // Homepage popup promoting a program; shown once per visitor (per announcement title)
+  function initPopup() {
+    const cfg = C.popup;
+    if (!cfg || !cfg.enabled || !document.querySelector(".hero")) return;
+    const p = C.programs.find((x) => x.id === cfg.program);
+    const an = p && (p.announcements || [])[0];
+    if (!an) return;
+    // Shown on up to maxShows visits; clicking through to the program stops it for good
+    const key = "sanad-popup-" + (an.title && an.title.en || p.id);
+    const max = cfg.maxShows || 5;
+    let shown = 0;
+    try { shown = parseInt(localStorage.getItem(key) || "0", 10) || 0; } catch (e) {}
+    if (shown >= max) return;
+    try { localStorage.setItem(key, String(shown + 1)); } catch (e) {}
+    const box = document.createElement("aside");
+    box.className = "promo";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-live", "polite");
+    const dismiss = (forGood) => {
+      box.classList.remove("is-open");
+      if (forGood) try { localStorage.setItem(key, String(max)); } catch (e) {}
+      setTimeout(() => box.remove(), 400);
+    };
+    const draw = () => {
+      box.setAttribute("aria-label", t(an.title));
+      box.innerHTML = `
+        ${an.poster ? `<img class="promo-poster" src="${esc(an.poster)}" alt="">` : ""}
+        <div class="promo-body">
+          ${t(an.badge) ? `<span class="announce-badge"><span class="pulse" aria-hidden="true"></span>${esc(t(an.badge))}</span>` : ""}
+          <strong>${esc(t(an.title))}</strong>
+          <div class="promo-actions">
+            ${an.link ? ext(an.link, t(an.label), "btn btn-primary btn-small promo-go") : ""}
+            <a class="promo-more" href="program.html?p=${esc(p.id)}">${esc(ui("popupDetails"))}</a>
+          </div>
+        </div>
+        <button type="button" class="promo-close" aria-label="${esc(ui("close"))}">×</button>`;
+    };
+    draw();
+    box.addEventListener("click", (e) => {
+      if (e.target.closest(".promo-go, .promo-more")) dismiss(true);
+      else if (e.target.closest(".promo-close")) dismiss(false);
+    });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && box.isConnected) dismiss(false); });
+    document.querySelector(".lang").addEventListener("click", () => box.isConnected && draw());
+    document.body.appendChild(box);
+    setTimeout(() => box.classList.add("is-open"), (cfg.delaySeconds || 3) * 1000);
+  }
+
   // Floating light/dark toggle; follows the system setting until the visitor picks a theme
   const MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
   const SUN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
@@ -445,4 +579,5 @@
 
   render();
   updateThemeButton();
+  initPopup();
 })();

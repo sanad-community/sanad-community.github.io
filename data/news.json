@@ -1,0 +1,149 @@
+{
+  "news": [
+    {
+      "icon": "mentor",
+      "tag": {
+        "ar": "سندك",
+        "en": "Sanadak"
+      },
+      "badge": {
+        "ar": "التسجيل مفتوح",
+        "en": "Registration open"
+      },
+      "date": {
+        "ar": "",
+        "en": ""
+      },
+      "title": {
+        "ar": "انطلاق «سندك»: الفوج الأول لطلاب الماجستير الجدد",
+        "en": "Sanadak launches: first cohort for new Master's students"
+      },
+      "text": {
+        "ar": "برنامج الإرشاد الأكاديمي الشخصي من مجتمع سند يربط طلاب وطالبات الماجستير الجدد بمرشدين ومرشدات من طلاب الدكتوراه وباحثي ما بعد الدكتوراه.",
+        "en": "SANAD's personal academic mentorship program pairs new Master's students with PhD and postdoc mentors."
+      },
+      "image": "images/programs/sanadak-poster.jpg",
+      "link": "program.html?p=mentorship",
+      "linkLabel": {
+        "ar": "سجّلوا الآن",
+        "en": "Register now"
+      }
+    },
+    {
+      "icon": "spotlight",
+      "tag": {
+        "ar": "باحث تحت المجهر",
+        "en": "Spotlight"
+      },
+      "badge": {
+        "ar": "",
+        "en": ""
+      },
+      "date": {
+        "ar": "",
+        "en": ""
+      },
+      "title": {
+        "ar": "حلقات «باحث تحت المجهر» على الموقع",
+        "en": "Watch «Researcher in the Spotlight» on the site"
+      },
+      "text": {
+        "ar": "مقابلات مع باحثات وباحثين عرب، يمكن مشاهدتها مباشرة من موقعنا.",
+        "en": "Interviews with Arab researchers, now playable right on our site."
+      },
+      "image": "",
+      "link": "program.html?p=spotlight",
+      "linkLabel": {
+        "ar": "",
+        "en": ""
+      }
+    },
+    {
+      "icon": "community",
+      "tag": {
+        "ar": "مجتمعات محلية",
+        "en": "Communities"
+      },
+      "badge": {
+        "ar": "",
+        "en": ""
+      },
+      "date": {
+        "ar": "",
+        "en": ""
+      },
+      "title": {
+        "ar": "فريق تنظيم محلي جديد في معهد التخنيون",
+        "en": "A new local organizing team at the Technion"
+      },
+      "text": {
+        "ar": "وتوسّع قادم إلى جامعة بن غوريون.",
+        "en": "With an expansion to Ben-Gurion University on the way."
+      },
+      "image": "",
+      "link": "program.html?p=communities",
+      "linkLabel": {
+        "ar": "",
+        "en": ""
+      }
+    },
+    {
+      "icon": "growth",
+      "tag": {
+        "ar": "تطوير أكاديمي",
+        "en": "Development"
+      },
+      "badge": {
+        "ar": "",
+        "en": ""
+      },
+      "date": {
+        "ar": "",
+        "en": ""
+      },
+      "title": {
+        "ar": "ورشة حول الذكاء الاصطناعي في البحث العلمي",
+        "en": "A workshop on AI in research"
+      },
+      "text": {
+        "ar": "إلى جانب ندوات حول الدكتوراه.",
+        "en": "Alongside panels about doing a PhD."
+      },
+      "image": "",
+      "link": "program.html?p=development",
+      "linkLabel": {
+        "ar": "",
+        "en": ""
+      }
+    },
+    {
+      "icon": "directory",
+      "tag": {
+        "ar": "الموقع",
+        "en": "Website"
+      },
+      "badge": {
+        "ar": "",
+        "en": ""
+      },
+      "date": {
+        "ar": "نوفمبر 2026",
+        "en": "November 2026"
+      },
+      "title": {
+        "ar": "موقع سند الجديد",
+        "en": "SANAD's new website"
+      },
+      "text": {
+        "ar": "المبادرات، الفريق، والانضمام: كل ما يخص مجتمع سند في مكان واحد.",
+        "en": "Programs, team and how to join: everything about SANAD in one place."
+      },
+      "image": "",
+      "link": "programs.html",
+      "linkLabel": {
+        "ar": "",
+        "en": ""
+      }
+    }
+  ]
+}

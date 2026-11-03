@@ -1,0 +1,452 @@
+{
+  "founder": {
+    "name": {
+      "ar": "فادي خطيب",
+      "en": "Fadi Khatib"
+    },
+    "role": {
+      "ar": "",
+      "en": ""
+    },
+    "affiliation": {
+      "ar": "معهد وايزمان للعلوم",
+      "en": "Weizmann Institute of Science"
+    },
+    "photo": "images/team/fadi.jpg",
+    "link": "https://fadikhatib.github.io"
+  },
+  "teams": [
+    {
+      "id": "social",
+      "name": {
+        "ar": "التواصل الاجتماعي",
+        "en": "Social media"
+      },
+      "text": {
+        "ar": "يدير حضور سند على إنستغرام ولينكدإن، وينشر أخبار المجتمع وفعالياته ومحتواه.",
+        "en": "Runs SANAD's Instagram and LinkedIn, sharing community news, events and content."
+      },
+      "lead": {
+        "name": {
+          "ar": "سنا خطيب",
+          "en": "Sana Khatib"
+        },
+        "role": {
+          "ar": "",
+          "en": ""
+        },
+        "affiliation": {
+          "ar": "معهد وايزمان للعلوم",
+          "en": "Weizmann Institute of Science"
+        },
+        "photo": "",
+        "link": "https://www.linkedin.com/in/sana-khatib/"
+      },
+      "members": [
+        {
+          "name": {
+            "ar": "جولان ناصر",
+            "en": "Jolan Nassir"
+          },
+          "role": {
+            "ar": "مسؤولة المحتوى",
+            "en": "Content lead"
+          },
+          "affiliation": {
+            "ar": "معهد وايزمان للعلوم",
+            "en": "Weizmann Institute of Science"
+          },
+          "photo": "",
+          "link": "https://www.linkedin.com/in/jolan-nassir-320b3123b/"
+        },
+        {
+          "name": {
+            "ar": "جونا خطيب",
+            "en": "Juna Khatib"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "معهد وايزمان للعلوم",
+            "en": "Weizmann Institute of Science"
+          },
+          "photo": "",
+          "link": "https://www.linkedin.com/in/juna-khatib-2b388034a/"
+        },
+        {
+          "name": {
+            "ar": "سليمة أبو ربيع",
+            "en": "Salima Abu Rabe'a"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "جامعة تل أبيب",
+            "en": "Tel Aviv University"
+          },
+          "photo": "",
+          "link": "https://www.linkedin.com/in/salimaaburabea/"
+        },
+        {
+          "name": {
+            "ar": "عدن ميعاري",
+            "en": "Adan Miari"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "جامعة تل أبيب",
+            "en": "Tel Aviv University"
+          },
+          "photo": "",
+          "link": "https://www.linkedin.com/in/adan-miari/"
+        },
+        {
+          "name": {
+            "ar": "ديما خطيب",
+            "en": "Dima Khatib"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "الجامعة العبرية في القدس",
+            "en": "Hebrew University of Jerusalem"
+          },
+          "photo": "",
+          "link": "https://www.linkedin.com/in/dima-khatib-87a444434/"
+        },
+        {
+          "name": {
+            "ar": "شهد شيوخي",
+            "en": "Shahd Ashouokhi"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "معهد وايزمان للعلوم",
+            "en": "Weizmann Institute of Science"
+          },
+          "photo": "",
+          "link": "https://www.linkedin.com/in/shahd-ashouokhi-59b595160/"
+        }
+      ]
+    },
+    {
+      "id": "meetups",
+      "name": {
+        "ar": "اللقاءات الشهرية",
+        "en": "Monthly meetups"
+      },
+      "text": {
+        "ar": "ينظّم اللقاءات الشهرية التي تجمع أعضاء المجتمع للتعارف والحديث وتبادل التجارب.",
+        "en": "Organizes the monthly gatherings where members meet, talk and share experiences."
+      },
+      "lead": {
+        "name": {
+          "ar": "جنان حجاجرة",
+          "en": "Jenan Hajajra"
+        },
+        "role": {
+          "ar": "",
+          "en": ""
+        },
+        "affiliation": {
+          "ar": "جامعة تل أبيب",
+          "en": "Tel Aviv University"
+        },
+        "photo": "images/team/jenan.jpg",
+        "link": "https://www.linkedin.com/in/jenan-hajajra-98445627b/"
+      },
+      "members": [
+        {
+          "name": {
+            "ar": "دنيا خوري",
+            "en": "Donya Khoury"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "جامعة تل أبيب",
+            "en": "Tel Aviv University"
+          },
+          "photo": "images/team/donya.jpg",
+          "link": "https://www.linkedin.com/in/donya-khoury-a03063280/"
+        },
+        {
+          "name": {
+            "ar": "عرين عويسات",
+            "en": "Areen Awesat"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "معهد وايزمان للعلوم",
+            "en": "Weizmann Institute of Science"
+          },
+          "photo": "",
+          "link": "https://www.linkedin.com/in/areen-awesat-867693409/"
+        },
+        {
+          "name": {
+            "ar": "محمود أبو رميلة",
+            "en": "Mahmoud Abu-Rmilah"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "معهد وايزمان للعلوم",
+            "en": "Weizmann Institute of Science"
+          },
+          "photo": "",
+          "link": ""
+        },
+        {
+          "name": {
+            "ar": "سامر سامر",
+            "en": "Samer Samer"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "الجامعة العبرية في القدس",
+            "en": "Hebrew University of Jerusalem"
+          },
+          "photo": "",
+          "link": ""
+        },
+        {
+          "name": {
+            "ar": "سامر سامر",
+            "en": "Samer Samer"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "الجامعة العبرية في القدس",
+            "en": "Hebrew University of Jerusalem"
+          },
+          "photo": "",
+          "link": ""
+        },
+        {
+          "name": {
+            "ar": "سامر سامر",
+            "en": "Samer Samer"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "معهد التخنيون",
+            "en": "Technion"
+          },
+          "photo": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": "mentorship",
+      "name": {
+        "ar": "الإرشاد الأكاديمي",
+        "en": "Academic mentoring"
+      },
+      "text": {
+        "ar": "يطوّر برنامج «سندك» الذي يربط بين باحثين في مراحل أكاديمية مختلفة.",
+        "en": "Develops Sanadak, the program connecting researchers at different career stages."
+      },
+      "lead": {
+        "name": {
+          "ar": "ريما صغير",
+          "en": "Rima Sghayer"
+        },
+        "role": {
+          "ar": "",
+          "en": ""
+        },
+        "affiliation": {
+          "ar": "جامعة تل أبيب",
+          "en": "Tel Aviv University"
+        },
+        "photo": "",
+        "link": "https://www.linkedin.com/in/rima-sghayer-0b1292316/"
+      },
+      "members": [
+        {
+          "name": {
+            "ar": "سامر سامر",
+            "en": "Samer Samer"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "",
+            "en": ""
+          },
+          "photo": "",
+          "link": ""
+        },
+        {
+          "name": {
+            "ar": "سامر سامر",
+            "en": "Samer Samer"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "",
+            "en": ""
+          },
+          "photo": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": "networking",
+      "name": {
+        "ar": "التشبيك والتعاون",
+        "en": "Networking & collaboration"
+      },
+      "text": {
+        "ar": "يعمل على ربط الباحثات والباحثين من مختلف التخصصات والمؤسسات، لتشجيع التعاون وتبادل المعرفة.",
+        "en": "Connects researchers across disciplines and institutions to encourage collaboration and knowledge-sharing."
+      },
+      "lead": {
+        "name": {
+          "ar": "سامر سامر",
+          "en": "Samer Samer"
+        },
+        "role": {
+          "ar": "",
+          "en": ""
+        },
+        "affiliation": {
+          "ar": "",
+          "en": ""
+        },
+        "photo": "",
+        "link": ""
+      },
+      "members": [
+        {
+          "name": {
+            "ar": "سامر سامر",
+            "en": "Samer Samer"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "",
+            "en": ""
+          },
+          "photo": "",
+          "link": ""
+        },
+        {
+          "name": {
+            "ar": "سامر سامر",
+            "en": "Samer Samer"
+          },
+          "role": {
+            "ar": "",
+            "en": ""
+          },
+          "affiliation": {
+            "ar": "",
+            "en": ""
+          },
+          "photo": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": {
+        "ar": "متطوّعون آخرون",
+        "en": "Other volunteers"
+      },
+      "text": {
+        "ar": "متطوّعون يساهمون في مشاريع ومبادرات مختلفة في سند.",
+        "en": "Volunteers contributing to various SANAD projects and initiatives."
+      },
+      "lead": {
+        "name": {
+          "ar": "",
+          "en": ""
+        },
+        "role": {
+          "ar": "",
+          "en": ""
+        },
+        "affiliation": {
+          "ar": "",
+          "en": ""
+        },
+        "photo": "",
+        "link": ""
+      },
+      "members": []
+    }
+  ],
+  "pastVolunteers": [
+    {
+      "name": {
+        "ar": "مهران شحادة",
+        "en": "Mahran Shehade"
+      },
+      "team": {
+        "ar": "التشبيك",
+        "en": "Networking"
+      }
+    },
+    {
+      "name": {
+        "ar": "دنيا إدلبي",
+        "en": "Dunya Edilbi"
+      },
+      "team": {
+        "ar": "اللقاءات المحلية",
+        "en": "Local meetups"
+      }
+    },
+    {
+      "name": {
+        "ar": "أنغام إبراهيم",
+        "en": "Angham Ibraheem"
+      },
+      "team": {
+        "ar": "عصف أفكار",
+        "en": "Brainstorming"
+      }
+    }
+  ]
+}

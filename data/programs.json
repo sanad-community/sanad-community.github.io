@@ -1,0 +1,569 @@
+{
+  "programs": [
+    {
+      "id": "communities",
+      "icon": "community",
+      "status": "active",
+      "name": {
+        "ar": "المجتمعات المحلية",
+        "en": "Local communities"
+      },
+      "text": {
+        "ar": "لقاءات شهرية، أمسيات تعارف، محاضرات ضيوف، ورشات ونشاطات اجتماعية في كل جامعة.",
+        "en": "Monthly gatherings, networking evenings, invited talks, workshops and social activities at each university."
+      },
+      "intro": {
+        "ar": "في كل جامعة يبني سند مجتمعًا محليًا يقوده منسّقون من الطلاب والباحثين. المجتمعات المحلية هي قلب سند: فيها نلتقي ونتعارف ونتعلّم من بعضنا، ونبني علاقات تتجاوز حدود مجموعات البحث. وجميعها مترابطة عبر مجتمع سند.",
+        "en": "At each university, SANAD builds a local community led by student and researcher coordinators. Local communities are the heart of SANAD: where we meet, learn from each other and build connections beyond our research groups. All of them are connected through the SANAD community."
+      },
+      "announcements": [],
+      "gallery": [
+        "images/gallery/monthly-meeting-1.jpg",
+        "images/gallery/monthly-meeting-1.jpg",
+        "images/gallery/monthly-meeting-1.jpg",
+        "images/gallery/monthly-meeting-1.jpg"
+      ],
+      "sections": [
+        {
+          "title": {
+            "ar": "ماذا يحدث في المجتمعات المحلية؟",
+            "en": "What happens in local communities?"
+          },
+          "items": [
+            {
+              "ar": "لقاءات شهرية غير رسمية",
+              "en": "Informal monthly gatherings"
+            },
+            {
+              "ar": "أمسيات تعارف وتشبيك",
+              "en": "Networking evenings"
+            },
+            {
+              "ar": "محاضرات ضيوف لباحثين عرب",
+              "en": "Invited talks by Arab researchers"
+            },
+            {
+              "ar": "ورشات علمية، مثل ورشة التخمير في معهد وايزمان",
+              "en": "Scientific workshops, like the fermentation workshop at Weizmann"
+            },
+            {
+              "ar": "نشاطات اجتماعية وثقافية",
+              "en": "Social and cultural activities"
+            }
+          ]
+        }
+      ],
+      "showCommunities": true,
+      "showVideos": false,
+      "team": "meetups",
+      "cta": "join",
+      "ctaTitle": {
+        "ar": "",
+        "en": ""
+      },
+      "ctaText": {
+        "ar": "",
+        "en": ""
+      },
+      "ctaLink": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "mentorship",
+      "icon": "mentor",
+      "status": "active",
+      "name": {
+        "ar": "سندك — برنامج الإرشاد",
+        "en": "Sanadak — Mentorship"
+      },
+      "text": {
+        "ar": "برنامج إرشاد أكاديمي شخصي يربط طلاب الماجستير الجدد بمرشدين من طلاب الدكتوراه وباحثي ما بعد الدكتوراه. التسجيل مفتوح للعام 2026–2027.",
+        "en": "A personal academic mentorship program pairing new Master's students with PhD and postdoc mentors. Registration is open for 2026–2027."
+      },
+      "intro": {
+        "ar": "«سندك» هو برنامج الإرشاد الأكاديمي الشخصي من مجتمع سند. نربط طلاب وطالبات الماجستير الجدد بمرشدين ومرشدات من مراحل أكاديمية متقدّمة، مثل طلاب الدكتوراه وباحثي ما بعد الدكتوراه، ليشاركوهم تجاربهم وخبراتهم ويكونوا سندًا لهم في بداية مشوارهم الأكاديمي. لأن كل بداية جديدة بحاجة إلى سند.",
+        "en": "Sanadak is SANAD's personal academic mentorship program. We pair new Master's students with mentors at more advanced stages, such as PhD students and postdocs, who share their experience and support them at the start of their academic journey. Because every new beginning needs a sanad."
+      },
+      "announcements": [
+        {
+          "badge": {
+            "ar": "التسجيل مفتوح",
+            "en": "Registration open"
+          },
+          "title": {
+            "ar": "انطلق الفوج الأول: طلاب الماجستير الجدد 2026–2027",
+            "en": "First cohort: new Master's students, 2026–2027"
+          },
+          "text": {
+            "ar": "هل أنت طالب/ة في السنة الأولى من الماجستير للعام الدراسي 2026–2027 في أحد مجالات العلوم والتكنولوجيا والهندسة والرياضيات؟ انضم/ي إلى «سندك» واحصل/ي على إرشاد أكاديمي شخصي.",
+            "en": "Are you in the first year of a Master's degree in a STEM field for 2026–2027? Join Sanadak and get personal academic mentoring."
+          },
+          "link": "https://forms.gle/gR5cryMK3obGCvY98",
+          "label": {
+            "ar": "سجّل/ي الآن",
+            "en": "Register now"
+          },
+          "poster": "images/programs/sanadak-poster.jpg"
+        },
+        {
+          "badge": {
+            "ar": "نبحث عن مرشدين ومرشدات",
+            "en": "Mentors wanted"
+          },
+          "title": {
+            "ar": "كونوا سندًا للآخرين: انضموا إلى «سندك» كمرشدين",
+            "en": "Be a sanad for others: join Sanadak as a mentor"
+          },
+          "text": {
+            "ar": "إذا كنتَ/كنتِ طالبًا/ة في السنة الثانية من الماجستير فما فوق في أحد مجالات العلوم والتكنولوجيا والهندسة والرياضيات، ولديك رغبة في مرافقة طلاب الماجستير الجدد ومساندتهم في بداية مسيرتهم الأكاديمية — فنحن نبحث عنك!",
+            "en": "If you're a second-year Master's student or beyond in a STEM field and would like to support new Master's students at the start of their academic journey, we're looking for you!"
+          },
+          "link": "https://forms.gle/pZmgAkgdzmGnRtV18",
+          "label": {
+            "ar": "أريد أن أكون مرشدًا/ة",
+            "en": "I want to mentor"
+          },
+          "poster": "images/programs/sanadak-mentors-poster.jpg"
+        }
+      ],
+      "gallery": [],
+      "sections": [
+        {
+          "title": {
+            "ar": "ماذا يقدّم البرنامج؟",
+            "en": "What the program offers"
+          },
+          "items": [
+            {
+              "ar": "إرشاد أكاديمي شخصي من طلاب وباحثين ذوي خبرة",
+              "en": "Personal academic mentoring from experienced students and researchers"
+            },
+            {
+              "ar": "مساعدة في تجاوز تحديات البحث والتأقلم مع الحياة الأكاديمية",
+              "en": "Help with research challenges and adjusting to academic life"
+            },
+            {
+              "ar": "مساحة لطرح الأسئلة والتشاور والاستفادة من تجارب الآخرين",
+              "en": "A space to ask, consult and learn from others' experience"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ar": "عمّ يمكن أن تسأل؟",
+            "en": "What can you ask about?"
+          },
+          "items": [
+            {
+              "ar": "البحث العلمي",
+              "en": "Research"
+            },
+            {
+              "ar": "العلاقة مع المشرف/ة",
+              "en": "Working with your supervisor"
+            },
+            {
+              "ar": "التحديات الأكاديمية",
+              "en": "Academic challenges"
+            },
+            {
+              "ar": "الخطوات القادمة في المسيرة الأكاديمية",
+              "en": "Your next academic steps"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ar": "لمن البرنامج؟",
+            "en": "Who is it for?"
+          },
+          "items": [
+            {
+              "ar": "الطلاب والطالبات العرب الذين بدأوا الماجستير في العام الدراسي 2026–2027",
+              "en": "Arab students who started a Master's degree in 2026–2027"
+            },
+            {
+              "ar": "في مجالات العلوم والتكنولوجيا والهندسة والرياضيات (STEM)",
+              "en": "In science, technology, engineering and mathematics (STEM)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ar": "مسارات نخطّط لها لاحقًا",
+            "en": "Tracks we plan to add"
+          },
+          "items": [
+            {
+              "ar": "طلاب ألقاب متقدّمة يرشدون طلاب البكالوريوس المعنيّين بالماجستير",
+              "en": "Advanced-degree students mentoring undergraduates interested in a Master's degree"
+            },
+            {
+              "ar": "باحثو ما بعد الدكتوراه يرشدون طلاب دكتوراه مهتمين بما بعد الدكتوراه",
+              "en": "Postdocs mentoring PhD students interested in postdoctoral positions"
+            },
+            {
+              "ar": "أعضاء هيئة تدريسية يرشدون باحثين يستعدّون لمسيرة أكاديمية",
+              "en": "Faculty mentoring researchers preparing for academic careers"
+            }
+          ]
+        }
+      ],
+      "showCommunities": false,
+      "showVideos": false,
+      "team": "mentorship",
+      "cta": "join",
+      "ctaTitle": {
+        "ar": "لأن كل بداية جديدة بحاجة إلى سند",
+        "en": "Because every new beginning needs a sanad"
+      },
+      "ctaText": {
+        "ar": "التسجيل للفوج الأول من «سندك» مفتوح الآن لطلاب الماجستير الجدد.",
+        "en": "Registration for Sanadak's first cohort is open now for new Master's students."
+      },
+      "ctaLink": {
+        "href": "https://forms.gle/gR5cryMK3obGCvY98",
+        "label": {
+          "ar": "سجّل/ي في «سندك»",
+          "en": "Register for Sanadak"
+        }
+      }
+    },
+    {
+      "id": "spotlight",
+      "icon": "spotlight",
+      "status": "active",
+      "name": {
+        "ar": "باحث تحت المجهر",
+        "en": "Researcher in the Spotlight"
+      },
+      "text": {
+        "ar": "مقابلات ومحتوى يسلّط الضوء على باحثات وباحثين عرب وإنجازاتهم ومسيرتهم، لإلهام الأجيال القادمة.",
+        "en": "Interviews and stories highlighting Arab researchers, their achievements and journeys, to inspire the next generation."
+      },
+      "intro": {
+        "ar": "مبادرة تسلّط الضوء على باحثات وباحثين عرب: إنجازاتهم العلمية، وتجاربهم الأكاديمية، ومسيرتهم الشخصية — لزيادة حضور العلماء العرب وإلهام الأجيال القادمة.",
+        "en": "An initiative highlighting Arab researchers: their scientific achievements, academic experiences and personal journeys, to increase the visibility of Arab scientists and inspire the next generation."
+      },
+      "announcements": [],
+      "gallery": [],
+      "sections": [],
+      "showCommunities": false,
+      "showVideos": true,
+      "team": "",
+      "cta": "contact",
+      "ctaTitle": {
+        "ar": "تعرفون باحثًا أو باحثة يستحقون الضوء؟",
+        "en": "Know a researcher who deserves the spotlight?"
+      },
+      "ctaText": {
+        "ar": "راسلونا واقترحوا اسمًا لمقابلة قادمة.",
+        "en": "Get in touch and suggest someone for a future interview."
+      },
+      "ctaLink": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "development",
+      "icon": "growth",
+      "status": "active",
+      "name": {
+        "ar": "التطوير الأكاديمي والمهني",
+        "en": "Academic & professional development"
+      },
+      "text": {
+        "ar": "ندوات حول الدكتوراه وورشات عملية، مثل استخدام أدوات الذكاء الاصطناعي في البحث العلمي، ترافق الباحثات والباحثين في كل مرحلة.",
+        "en": "PhD panels and hands-on workshops, such as using AI tools in research, for every stage of an academic path."
+      },
+      "intro": {
+        "ar": "ننظّم ونخطّط فعاليات تعليمية ترافق الباحثات والباحثين في كل مرحلة من مسيرتهم الأكاديمية، من التفكير بالدراسات العليا وحتى التقديم لوظائف أكاديمية.",
+        "en": "We organize and plan educational events for every stage of an academic path, from considering graduate school to applying for faculty positions."
+      },
+      "announcements": [],
+      "gallery": [],
+      "sections": [
+        {
+          "title": {
+            "ar": "ما قمنا به",
+            "en": "What we've done"
+          },
+          "items": [
+            {
+              "ar": "ورشة حول استخدام أدوات الذكاء الاصطناعي في البحث العلمي",
+              "en": "A workshop on using AI tools in research"
+            },
+            {
+              "ar": "ندوات حول الدكتوراه",
+              "en": "Panels about doing a PhD"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ar": "ما نخطّط له",
+            "en": "What we're planning"
+          },
+          "items": [
+            {
+              "ar": "ندوات حول الماجستير وما بعد الدكتوراه",
+              "en": "Panels on Master's studies and postdocs"
+            },
+            {
+              "ar": "سوق العمل الأكاديمي والتقديم لوظائف هيئة تدريسية",
+              "en": "The academic job market and faculty applications"
+            },
+            {
+              "ar": "كتابة السيرة الذاتية",
+              "en": "CV writing"
+            },
+            {
+              "ar": "عرض الأبحاث والتواصل العلمي",
+              "en": "Presenting and communicating research"
+            },
+            {
+              "ar": "جلسات يعرض فيها الباحثون أبحاثهم ويعرّفون بأنفسهم",
+              "en": "Sessions where researchers present their work and introduce themselves"
+            }
+          ]
+        }
+      ],
+      "showCommunities": false,
+      "showVideos": false,
+      "team": "",
+      "cta": "join",
+      "ctaTitle": {
+        "ar": "",
+        "en": ""
+      },
+      "ctaText": {
+        "ar": "",
+        "en": ""
+      },
+      "ctaLink": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "partnerships",
+      "icon": "handshake",
+      "status": "active",
+      "name": {
+        "ar": "الشراكات والتواصل",
+        "en": "Partnerships & outreach"
+      },
+      "text": {
+        "ar": "شراكات مع مؤسسات أكاديمية وتعليمية ومبادرات مجتمعية، لسدّ الفجوة بين البكالوريوس والبحث والمسيرة الأكاديمية.",
+        "en": "Partnerships with academic and educational institutions and community initiatives, bridging undergraduate studies, research and academic careers."
+      },
+      "intro": {
+        "ar": "نسعى إلى شراكات مع مؤسسات أكاديمية وتعليمية وباحثين ومبادرات مجتمعية، لنسدّ الفجوة بين البكالوريوس والبحث العلمي والمسيرة الأكاديمية، ونزيد الوعي بالفرص المتاحة.",
+        "en": "We seek partnerships with academic and educational institutions, researchers and community initiatives, to bridge the gap between undergraduate studies, research and academic careers, and raise awareness of available opportunities."
+      },
+      "announcements": [],
+      "gallery": [],
+      "sections": [
+        {
+          "title": {
+            "ar": "مع من نتعاون؟",
+            "en": "Who we work with"
+          },
+          "items": [
+            {
+              "ar": "مؤسسات أكاديمية",
+              "en": "Academic institutions"
+            },
+            {
+              "ar": "منظمات تعليمية",
+              "en": "Educational organizations"
+            },
+            {
+              "ar": "باحثات وباحثون",
+              "en": "Researchers"
+            },
+            {
+              "ar": "مبادرات مجتمعية",
+              "en": "Community initiatives"
+            }
+          ]
+        }
+      ],
+      "showCommunities": false,
+      "showVideos": false,
+      "team": "",
+      "cta": "contact",
+      "ctaTitle": {
+        "ar": "مهتمون بالشراكة؟",
+        "en": "Interested in partnering?"
+      },
+      "ctaText": {
+        "ar": "يسعدنا التواصل مع مؤسسات ومبادرات تشاركنا الرؤية.",
+        "en": "We'd love to hear from institutions and initiatives that share our vision."
+      },
+      "ctaLink": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "networking",
+      "icon": "network",
+      "status": "planned",
+      "name": {
+        "ar": "التشبيك والتعاون",
+        "en": "Networking & collaboration"
+      },
+      "text": {
+        "ar": "نخطّط لربط باحثات وباحثين عرب من مختلف التخصصات والمؤسسات، لتشجيع التعاون وبناء شبكة مهنية داعمة.",
+        "en": "We plan to connect Arab researchers across disciplines and institutions to encourage collaboration and build a supportive professional network."
+      },
+      "intro": {
+        "ar": "نخطّط لربط باحثات وباحثين عرب من مختلف التخصصات والمؤسسات، لتشجيع التعاون وتبادل المعرفة وبناء شبكة مهنية داعمة.",
+        "en": "We plan to connect Arab researchers across disciplines and institutions to encourage collaboration, knowledge-sharing and a supportive professional network."
+      },
+      "announcements": [],
+      "gallery": [],
+      "sections": [
+        {
+          "title": {
+            "ar": "ما نخطّط له",
+            "en": "What we plan"
+          },
+          "items": [
+            {
+              "ar": "شبكة لباحثي ما بعد الدكتوراه العرب",
+              "en": "A network for Arab postdoctoral researchers"
+            },
+            {
+              "ar": "لقاءات شهرية عبر الإنترنت لباحثي ما بعد الدكتوراه",
+              "en": "Monthly online meetings for postdocs"
+            },
+            {
+              "ar": "لقاءات تشبيك محلية وقطرية",
+              "en": "Local and national networking gatherings"
+            },
+            {
+              "ar": "ربط بين باحثين ذوي اهتمامات بحثية مشتركة",
+              "en": "Connecting researchers with shared research interests"
+            },
+            {
+              "ar": "فرص للقاء علماء عرب ذوي خبرة",
+              "en": "Opportunities to meet established Arab scientists"
+            }
+          ]
+        }
+      ],
+      "showCommunities": false,
+      "showVideos": false,
+      "team": "networking",
+      "cta": "join",
+      "ctaTitle": {
+        "ar": "",
+        "en": ""
+      },
+      "ctaText": {
+        "ar": "",
+        "en": ""
+      },
+      "ctaLink": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "directory",
+      "icon": "directory",
+      "status": "planned",
+      "name": {
+        "ar": "دليل أعضاء سند",
+        "en": "SANAD member directory"
+      },
+      "text": {
+        "ar": "قاعدة بيانات لأعضاء المجتمع، يمكن البحث فيها حسب المجال أو الجامعة أو المرحلة الأكاديمية، لإيجاد شركاء للتعاون ومن يمكن الاستشارة معهم.",
+        "en": "A searchable database of community members, by field, university or academic stage, to find collaborators and people to consult."
+      },
+      "intro": {
+        "ar": "نخطّط لبناء دليل لأعضاء مجتمع سند: صفحة تعريفية قصيرة لكل عضو وعضوة، يمكن البحث فيها حسب المجال أو الجامعة أو المرحلة الأكاديمية. هدفه أن يسهّل على الباحثات والباحثين العثور على بعضهم البعض، للتعاون أو للاستشارة أو لتبادل التجارب.",
+        "en": "We plan to build a directory of SANAD members: a short profile for each member, searchable by field, university or academic stage. The goal is to make it easy for researchers to find each other, to collaborate, ask for advice or share experiences."
+      },
+      "announcements": [],
+      "gallery": [],
+      "sections": [
+        {
+          "title": {
+            "ar": "ما الفكرة؟",
+            "en": "The idea"
+          },
+          "items": [
+            {
+              "ar": "صفحة تعريفية لكل عضو/ة: الجامعة، المرحلة الأكاديمية، المجال والاهتمامات البحثية",
+              "en": "A profile for each member: university, academic stage, field and research interests"
+            },
+            {
+              "ar": "بحث حسب المجال أو الجامعة أو المرحلة الأكاديمية",
+              "en": "Search by field, university or academic stage"
+            },
+            {
+              "ar": "إيجاد شركاء للتعاون، ومرشدين، ومن مرّ بتجربة مشابهة",
+              "en": "Find collaborators, mentors and people who've been through a similar path"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ar": "الخصوصية",
+            "en": "Privacy"
+          },
+          "items": [
+            {
+              "ar": "الانضمام إلى الدليل اختياري",
+              "en": "Joining the directory is optional"
+            },
+            {
+              "ar": "كل عضو/ة يقرّر ما يظهر في صفحته/ا",
+              "en": "Each member decides what appears on their profile"
+            }
+          ]
+        }
+      ],
+      "showCommunities": false,
+      "showVideos": false,
+      "team": "",
+      "cta": "contact",
+      "ctaTitle": {
+        "ar": "تريدون المساهمة في بنائه؟",
+        "en": "Want to help build it?"
+      },
+      "ctaText": {
+        "ar": "إن كانت لديكم أفكار أو خبرة في بناء مثل هذه الأدوات، يسعدنا تواصلكم.",
+        "en": "If you have ideas or experience building tools like this, we'd love to hear from you."
+      },
+      "ctaLink": {
+        "href": "",
+        "label": {
+          "ar": "",
+          "en": ""
+        }
+      }
+    }
+  ]
+}
