@@ -42,8 +42,8 @@ window.SANAD = {
     aboutKicker: { ar: "من نحن", en: "About us" },
     aboutTitle: { ar: "سند يعني أن يكون لك من تستند إليه", en: "SANAD means having someone to lean on" },
     aboutStory: {
-      ar: "بدأ سند كمبادرة محلية في معهد وايزمان للعلوم، أسسها فادي خطيب، طالب الدكتوراه في المعهد. ومنذ ذلك الحين توسّع ليصبح شبكة تربط بين عدة جامعات ومؤسسات بحثية.",
-      en: "SANAD started as a local initiative at the Weizmann Institute of Science, founded by Fadi Khatib, a PhD student there. It has since grown into a network spanning several universities and research institutions."
+      ar: "بدأ سند كمبادرة محلية في معهد وايزمان للعلوم، ومنذ ذلك الحين توسّع ليصبح مجتمعًا يجمع طلابًا وباحثين من عدة جامعات ومؤسسات بحثية.",
+      en: "SANAD started as a local initiative at the Weizmann Institute of Science and has since grown into a community bringing together students and researchers from several universities and research institutions."
     },
     aboutChallenges: {
       ar: "نعمل على مواجهة العزلة الأكاديمية، وقلة الوصول إلى الإرشاد والشبكات المهنية، وضعف التمثيل، وعدم تكافؤ الوصول إلى المعلومات والفرص.",
@@ -95,8 +95,8 @@ window.SANAD = {
     teamKicker: { ar: "الفريق", en: "Team" },
     teamTitle: { ar: "مجتمع يقوده طلاب متطوّعون", en: "A community led by student volunteers" },
     teamText: {
-      ar: "يعمل سند بفرق المتطوّعين ومنسّقين محليين في الجامعات. ثقافتنا منفتحة وتعاونية: كل عضو مدعو لأخذ المبادرة واقتراح المشاريع والتطوّع.",
-      en: "SANAD runs on volunteer teams and local university coordinators. Our culture is open and collaborative: every member is invited to take initiative, propose projects and volunteer."
+      ar: "يقوم سند على طلاب متطوّعين من جامعات مختلفة، يعملون معًا في فرق تنظّم اللقاءات، وتطوّر المبادرات، وتبني المجتمع. ثقافتنا منفتحة وتعاونية: كل عضو مدعوّ لأخذ المبادرة واقتراح المشاريع والتطوّع.",
+      en: "SANAD is built by student volunteers from different universities, working together in teams that organize meetups, develop programs and grow the community. Our culture is open and collaborative: every member is invited to take initiative, propose projects and volunteer."
     },
     founder: { ar: "مؤسس ومنسّق المجتمع", en: "Founder & community coordinator" },
     seeFullTeam: { ar: "تعرّفوا على الفريق كاملًا", en: "Meet the full team" },
