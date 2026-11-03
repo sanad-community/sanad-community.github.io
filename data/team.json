@@ -1,12 +1,8 @@
 {
   "founder": {
     "name": {
-      "ar": "فادي خطيب",
+      "ar": "فادي عصام خطيب",
       "en": "Fadi Khatib"
-    },
-    "role": {
-      "ar": "",
-      "en": ""
     },
     "affiliation": {
       "ar": "معهد وايزمان للعلوم",
@@ -31,15 +27,10 @@
           "ar": "سنا خطيب",
           "en": "Sana Khatib"
         },
-        "role": {
-          "ar": "",
-          "en": ""
-        },
         "affiliation": {
           "ar": "معهد وايزمان للعلوم",
           "en": "Weizmann Institute of Science"
         },
-        "photo": "",
         "link": "https://www.linkedin.com/in/sana-khatib/"
       },
       "members": [
@@ -56,7 +47,6 @@
             "ar": "معهد وايزمان للعلوم",
             "en": "Weizmann Institute of Science"
           },
-          "photo": "",
           "link": "https://www.linkedin.com/in/jolan-nassir-320b3123b/"
         },
         {
@@ -64,15 +54,10 @@
             "ar": "جونا خطيب",
             "en": "Juna Khatib"
           },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
           "affiliation": {
             "ar": "معهد وايزمان للعلوم",
             "en": "Weizmann Institute of Science"
           },
-          "photo": "",
           "link": "https://www.linkedin.com/in/juna-khatib-2b388034a/"
         },
         {
@@ -80,15 +65,10 @@
             "ar": "سليمة أبو ربيع",
             "en": "Salima Abu Rabe'a"
           },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
           "affiliation": {
             "ar": "جامعة تل أبيب",
             "en": "Tel Aviv University"
           },
-          "photo": "",
           "link": "https://www.linkedin.com/in/salimaaburabea/"
         },
         {
@@ -96,15 +76,10 @@
             "ar": "عدن ميعاري",
             "en": "Adan Miari"
           },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
           "affiliation": {
             "ar": "جامعة تل أبيب",
             "en": "Tel Aviv University"
           },
-          "photo": "",
           "link": "https://www.linkedin.com/in/adan-miari/"
         },
         {
@@ -112,15 +87,10 @@
             "ar": "ديما خطيب",
             "en": "Dima Khatib"
           },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
           "affiliation": {
             "ar": "الجامعة العبرية في القدس",
             "en": "Hebrew University of Jerusalem"
           },
-          "photo": "",
           "link": "https://www.linkedin.com/in/dima-khatib-87a444434/"
         },
         {
@@ -128,15 +98,10 @@
             "ar": "شهد شيوخي",
             "en": "Shahd Ashouokhi"
           },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
           "affiliation": {
             "ar": "معهد وايزمان للعلوم",
             "en": "Weizmann Institute of Science"
           },
-          "photo": "",
           "link": "https://www.linkedin.com/in/shahd-ashouokhi-59b595160/"
         }
       ]
@@ -156,10 +121,6 @@
           "ar": "جنان حجاجرة",
           "en": "Jenan Hajajra"
         },
-        "role": {
-          "ar": "",
-          "en": ""
-        },
         "affiliation": {
           "ar": "جامعة تل أبيب",
           "en": "Tel Aviv University"
@@ -173,10 +134,6 @@
             "ar": "دنيا خوري",
             "en": "Donya Khoury"
           },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
           "affiliation": {
             "ar": "جامعة تل أبيب",
             "en": "Tel Aviv University"
@@ -189,15 +146,10 @@
             "ar": "عرين عويسات",
             "en": "Areen Awesat"
           },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
           "affiliation": {
             "ar": "معهد وايزمان للعلوم",
             "en": "Weizmann Institute of Science"
           },
-          "photo": "",
           "link": "https://www.linkedin.com/in/areen-awesat-867693409/"
         },
         {
@@ -205,64 +157,40 @@
             "ar": "محمود أبو رميلة",
             "en": "Mahmoud Abu-Rmilah"
           },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
           "affiliation": {
             "ar": "معهد وايزمان للعلوم",
             "en": "Weizmann Institute of Science"
-          },
-          "photo": "",
-          "link": ""
+          }
         },
         {
           "name": {
             "ar": "سامر سامر",
             "en": "Samer Samer"
-          },
-          "role": {
-            "ar": "",
-            "en": ""
           },
           "affiliation": {
             "ar": "الجامعة العبرية في القدس",
             "en": "Hebrew University of Jerusalem"
-          },
-          "photo": "",
-          "link": ""
+          }
         },
         {
           "name": {
             "ar": "سامر سامر",
             "en": "Samer Samer"
-          },
-          "role": {
-            "ar": "",
-            "en": ""
           },
           "affiliation": {
             "ar": "الجامعة العبرية في القدس",
             "en": "Hebrew University of Jerusalem"
-          },
-          "photo": "",
-          "link": ""
+          }
         },
         {
           "name": {
             "ar": "سامر سامر",
             "en": "Samer Samer"
-          },
-          "role": {
-            "ar": "",
-            "en": ""
           },
           "affiliation": {
             "ar": "معهد التخنيون",
             "en": "Technion"
-          },
-          "photo": "",
-          "link": ""
+          }
         }
       ]
     },
@@ -281,15 +209,10 @@
           "ar": "ريما صغير",
           "en": "Rima Sghayer"
         },
-        "role": {
-          "ar": "",
-          "en": ""
-        },
         "affiliation": {
           "ar": "جامعة تل أبيب",
           "en": "Tel Aviv University"
         },
-        "photo": "",
         "link": "https://www.linkedin.com/in/rima-sghayer-0b1292316/"
       },
       "members": [
@@ -297,33 +220,13 @@
           "name": {
             "ar": "سامر سامر",
             "en": "Samer Samer"
-          },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
-          "affiliation": {
-            "ar": "",
-            "en": ""
-          },
-          "photo": "",
-          "link": ""
+          }
         },
         {
           "name": {
             "ar": "سامر سامر",
             "en": "Samer Samer"
-          },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
-          "affiliation": {
-            "ar": "",
-            "en": ""
-          },
-          "photo": "",
-          "link": ""
+          }
         }
       ]
     },
@@ -341,50 +244,20 @@
         "name": {
           "ar": "سامر سامر",
           "en": "Samer Samer"
-        },
-        "role": {
-          "ar": "",
-          "en": ""
-        },
-        "affiliation": {
-          "ar": "",
-          "en": ""
-        },
-        "photo": "",
-        "link": ""
+        }
       },
       "members": [
         {
           "name": {
             "ar": "سامر سامر",
             "en": "Samer Samer"
-          },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
-          "affiliation": {
-            "ar": "",
-            "en": ""
-          },
-          "photo": "",
-          "link": ""
+          }
         },
         {
           "name": {
             "ar": "سامر سامر",
             "en": "Samer Samer"
-          },
-          "role": {
-            "ar": "",
-            "en": ""
-          },
-          "affiliation": {
-            "ar": "",
-            "en": ""
-          },
-          "photo": "",
-          "link": ""
+          }
         }
       ]
     },
@@ -397,24 +270,7 @@
       "text": {
         "ar": "متطوّعون يساهمون في مشاريع ومبادرات مختلفة في سند.",
         "en": "Volunteers contributing to various SANAD projects and initiatives."
-      },
-      "lead": {
-        "name": {
-          "ar": "",
-          "en": ""
-        },
-        "role": {
-          "ar": "",
-          "en": ""
-        },
-        "affiliation": {
-          "ar": "",
-          "en": ""
-        },
-        "photo": "",
-        "link": ""
-      },
-      "members": []
+      }
     }
   ],
   "pastVolunteers": [
