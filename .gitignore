@@ -1,0 +1,4 @@
+# Originals and source files (not part of the public site)
+for_dev/
+*.pdf
+.DS_Store

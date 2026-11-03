@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سند | SANAD</title>
+  <meta name="description" content="سند — مجتمع الباحثين العرب. SANAD — the Arab researchers community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/brand/logo-mark.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand" aria-label="SANAD">
+        <img class="brand-logo" src="images/brand/logo-mark.svg" alt="" width="34" height="42">
+        <span class="brand-name">سند <span class="brand-latin">SANAD</span></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <a href="#about" data-t="navAbout"></a>
+        <a href="#communities" data-t="navCommunities"></a>
+        <a href="programs.html" data-t="navPrograms"></a>
+        <a href="team.html" data-t="navTeam"></a>
+        <a href="#faq" data-t="navFaq"></a>
+        <a href="#find-us" data-t="navFindUs"></a>
+        <a href="#join" class="nav-cta" data-t="navJoin"></a>
+        <button class="lang" type="button" data-t="langSwitch"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-t="heroEyebrow"></p>
+          <h1 data-t="heroTitle"></h1>
+          <p class="lead" data-t="heroText"></p>
+          <div class="actions">
+            <a href="#join" class="btn btn-primary" data-t="ctaJoin"></a>
+            <a href="#volunteer" class="btn btn-ghost" data-t="ctaVolunteer"></a>
+          </div>
+        </div>
+        <div class="hero-art"><img class="hero-logo" src="images/brand/logo.svg" alt="مجتمع سند للباحثات والباحثين — SANAD" width="396" height="606"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <p class="kicker" data-t="aboutKicker"></p>
+        <h2 data-t="aboutTitle"></h2>
+        <div class="about-grid">
+          <div class="prose">
+            <p data-t="aboutStory"></p>
+            <p data-t="aboutChallenges"></p>
+          </div>
+          <div class="mv">
+            <div class="mv-card"><h3 data-t="missionLabel"></h3><p data-t="mission"></p></div>
+            <div class="mv-card"><h3 data-t="visionLabel"></h3><p data-t="vision"></p></div>
+          </div>
+        </div>
+
+        <div class="audience">
+          <h3 data-t="audienceTitle"></h3>
+          <ul class="chips" id="audience"></ul>
+          <p class="muted" data-t="audienceFields"></p>
+        </div>
+
+        <h3 class="sub" data-t="valuesTitle"></h3>
+        <ul class="values" id="values"></ul>
+      </div>
+    </section>
+
+    <section id="communities" class="section section-tint">
+      <div class="wrap">
+        <p class="kicker" data-t="communitiesKicker"></p>
+        <h2 data-t="communitiesTitle"></h2>
+        <p class="lead narrow" data-t="communitiesText"></p>
+        <div class="cards" id="communityList"></div>
+      </div>
+    </section>
+
+    <section id="programs" class="section">
+      <div class="wrap">
+        <p class="kicker" data-t="programsKicker"></p>
+        <h2 data-t="programsTitle"></h2>
+        <div class="cards cards-3" id="programList"></div>
+        <div class="actions"><a href="programs.html" class="btn btn-ghost" data-t="allPrograms"></a></div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="wrap">
+        <p class="kicker" data-t="teamKicker"></p>
+        <h2 data-t="teamTitle"></h2>
+        <p class="lead narrow" data-t="teamText"></p>
+        <div class="team" id="teamList"></div>
+        <div class="actions"><a href="team.html" class="btn btn-ghost" data-t="seeFullTeam"></a></div>
+      </div>
+    </section>
+
+    <section id="join" class="section join">
+      <div class="wrap join-grid">
+        <div class="join-card join-main">
+          <p class="kicker" data-t="joinKicker"></p>
+          <h2 data-t="joinTitle"></h2>
+          <p data-t="joinText"></p>
+          <div class="actions" id="joinActions"></div>
+        </div>
+        <div class="join-card" id="volunteer">
+          <h2 data-t="volunteerTitle"></h2>
+          <p data-t="volunteerText"></p>
+          <div class="actions" id="volunteerActions"></div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="section">
+      <div class="wrap faq-wrap">
+        <div>
+          <p class="kicker" data-t="faqKicker"></p>
+          <h2 data-t="faqTitle"></h2>
+        </div>
+        <div class="faq" id="faqList"></div>
+      </div>
+    </section>
+
+    <section id="find-us" class="section find-us">
+      <div class="wrap">
+        <h2 data-t="findUsTitle"></h2>
+        <p class="muted" data-t="findUsText"></p>
+        <div class="find-grid" id="findUs"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <img class="footer-logo" src="images/brand/logo.svg" alt="مجتمع سند للباحثات والباحثين — SANAD">
+        <p class="muted" data-t="footerTagline"></p>
+        <p class="muted" data-t="footerPartners"></p>
+      </div>
+      <div class="social" id="social"></div>
+    </div>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
