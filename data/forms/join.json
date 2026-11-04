@@ -1,0 +1,139 @@
+{
+  "action": "https://docs.google.com/forms/d/e/1FAIpQLScWx33Md9YNV4vNYIGhpGLdU5R0ZIsxxbKbPrXJoleWdHvAgA/formResponse",
+  "embed": "https://docs.google.com/forms/d/e/1FAIpQLScWx33Md9YNV4vNYIGhpGLdU5R0ZIsxxbKbPrXJoleWdHvAgA/viewform?embedded=true",
+  "google": "https://forms.gle/wwqB7hA7KaAkeSjs6",
+  "pageHistory": "0,1",
+  "unsupported": [],
+  "groups": [
+    {
+      "title": null,
+      "fields": [
+        {
+          "id": "1408863201",
+          "label": "الإسم الكامل (باللغة العربية)",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "id": "1324143509",
+          "label": "عنوان البريد الإلكتروني الجامعي",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "id": "1797157054",
+          "label": "عنوان البريد الإلكتروني الشخصي",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "id": "1165364159",
+          "label": "رقم الهاتف",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "id": "294359830",
+          "label": "سنة الولادة",
+          "required": true,
+          "type": "year"
+        },
+        {
+          "id": "594189477",
+          "label": "البلدة الأصلية",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "id": "347898762",
+          "label": "المؤسسة الأكاديمية",
+          "required": true,
+          "type": "select",
+          "options": [
+            "الجامعة العبرية",
+            "جامعة بار ايلان",
+            "جامعة بئر السبع",
+            "جامعة حيفا",
+            "جامعة تل أبيب",
+            "معهد وايزمان للعلوم",
+            "التخنيون",
+            "جامعة تل حاي",
+            "الجامعة المفتوحة",
+            "خارج البلاد",
+            "آخر"
+          ]
+        },
+        {
+          "id": "456544019",
+          "label": "إذا أجبت بـ «آخر» على السؤال السابق، يُرجى كتابة اسم الجامعة هنا",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "id": "1639290763",
+          "label": "الحالة الأكاديمية",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "طالب/ة",
+            "خريج/ة"
+          ]
+        },
+        {
+          "id": "1555417262",
+          "label": "المستوى الأكاديمي",
+          "required": true,
+          "type": "select",
+          "options": [
+            "بكالوريوس - لقب أول (سنة أخيرة)",
+            "ماجستير - لقب ثاني",
+            "دكتوراه  - لقب ثالث",
+            "باحث\\ة ما بعد الدكتوراه - جامعة داخل البلاد",
+            "باحث\\ة ما بعد الدكتوراه - جامعة خارج البلاد"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "مجال التخصص",
+      "fields": [
+        {
+          "id": "1383925850",
+          "label": "مجال التخصص",
+          "required": true,
+          "type": "select",
+          "options": [
+            "الهندسة",
+            "العلوم الدقيقة",
+            "العلوم الطبيعية",
+            "الرياضيات وعلوم الحاسوب",
+            "آخر"
+          ]
+        },
+        {
+          "id": "1235856515",
+          "label": "يرجى تحديد التخصص (مثلًا: علوم الأحياء)",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "id": "1224571596",
+          "label": "هل تود/ين المشاركة أو المساعدة في تنظيم أنشطة مستقبلية؟",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "نعم",
+            "لا",
+            "ربما"
+          ]
+        },
+        {
+          "id": "244587568",
+          "label": "ملاحظات",
+          "required": false,
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

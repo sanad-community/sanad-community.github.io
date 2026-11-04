@@ -103,12 +103,13 @@
             "ar": "هل أنت طالب/ة في السنة الأولى من الماجستير للعام الدراسي 2026–2027 في أحد مجالات العلوم والتكنولوجيا والهندسة والرياضيات؟ انضم/ي إلى «سندك» واحصل/ي على إرشاد أكاديمي شخصي.",
             "en": "Are you in the first year of a Master's degree in a STEM field for 2026–2027? Join Sanadak and get personal academic mentoring."
           },
-          "link": "https://forms.gle/gR5cryMK3obGCvY98",
+          "link": "form.html?f=mentee",
           "label": {
             "ar": "سجّل/ي الآن",
             "en": "Register now"
           },
-          "poster": "images/programs/sanadak-poster.jpg"
+          "poster": "images/programs/sanadak-poster.jpg",
+          "embed": ""
         },
         {
           "badge": {
@@ -123,12 +124,13 @@
             "ar": "إذا كنتَ/كنتِ طالبًا/ة في السنة الثانية من الماجستير فما فوق في أحد مجالات العلوم والتكنولوجيا والهندسة والرياضيات، ولديك رغبة في مرافقة طلاب الماجستير الجدد ومساندتهم في بداية مسيرتهم الأكاديمية — فنحن نبحث عنك!",
             "en": "If you're a second-year Master's student or beyond in a STEM field and would like to support new Master's students at the start of their academic journey, we're looking for you!"
           },
-          "link": "https://forms.gle/pZmgAkgdzmGnRtV18",
+          "link": "form.html?f=mentor",
           "label": {
             "ar": "أريد أن أكون مرشدًا/ة",
             "en": "I want to mentor"
           },
-          "poster": "images/programs/sanadak-mentors-poster.jpg"
+          "poster": "images/programs/sanadak-mentors-poster.jpg",
+          "embed": ""
         }
       ],
       "gallery": [],
@@ -227,7 +229,7 @@
         "en": "Registration for Sanadak's first cohort is open now for new Master's students."
       },
       "ctaLink": {
-        "href": "https://forms.gle/gR5cryMK3obGCvY98",
+        "href": "form.html?f=mentee",
         "label": {
           "ar": "سجّل/ي في «سندك»",
           "en": "Register for Sanadak"

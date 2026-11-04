@@ -24,7 +24,8 @@
   // Pages share this script; sections missing from the current page are skipped.
   const set = (sel, html) => { const el = $(sel); if (el) el.innerHTML = html; };
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const ext = (href, label, cls) => `<a${cls ? ` class="${cls}"` : ""} href="${esc(href)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+  // external links open in a new tab; links inside the site (e.g. form.html?f=mentee) stay in this one
+  const ext = (href, label, cls) => `<a${cls ? ` class="${cls}"` : ""} href="${esc(href)}"${/^https?:/.test(href) ? ' target="_blank" rel="noopener"' : ""}>${esc(label)}</a>`;
 
   const STATUS = { active: "statusActive", forming: "statusForming", planned: "statusPlanned" };
   const badge = (s) => `<span class="badge badge-${s}">${esc(ui(STATUS[s]))}</span>`;
@@ -136,7 +137,7 @@
 
 
     set("#faqList", (C.faq || []).map((f) => {
-      const href = f.link && f.link.href && (f.link.href === "joinForm" ? C.links.joinForm : f.link.href);
+      const href = f.link && f.link.href && (f.link.href === "joinForm" ? "join.html" : f.link.href);
       const external = href && /^https?:/.test(href);
       return `<details class="faq-item">
         <summary>${esc(t(f.q))}</summary>
@@ -176,7 +177,7 @@
   function buttons() {
     const L = C.links;
     return {
-      join: L.joinForm ? ext(L.joinForm, ui("joinForm"), "btn btn-primary") : "",
+      join: `<a class="btn btn-primary" href="join.html">${esc(ui("joinForm"))}</a>`,
       whatsapp: L.whatsapp ? ext(L.whatsapp, ui("joinWhatsapp"), L.joinForm ? "btn btn-ghost" : "btn btn-primary") : "",
       ig: ext(L.instagram, ui("contactInstagram"), "btn btn-ghost"),
       mail: L.email ? `<a class="btn btn-ghost" href="mailto:${esc(L.email)}">${esc(ui("contactEmail"))}</a>` : ""
@@ -191,7 +192,10 @@
         ${t(an.badge) ? `<span class="announce-badge"><span class="pulse" aria-hidden="true"></span>${esc(t(an.badge))}</span>` : ""}
         <h2>${esc(t(an.title))}</h2>
         <p>${esc(t(an.text))}</p>
-        ${an.link ? (an.link.startsWith("mailto:") ? `<a class="btn btn-primary" href="${esc(an.link)}">${esc(t(an.label))}</a>` : ext(an.link, t(an.label), "btn btn-primary")) : ""}
+        <div class="announce-actions">
+          ${an.embed ? `<button type="button" class="btn btn-primary form-open" data-embed="${esc(an.embed)}" data-title="${esc(t(an.title))}" data-link="${esc(an.link || "")}">${esc(ui("fillHere"))}</button>` : ""}
+          ${an.link ? (an.link.startsWith("mailto:") ? `<a class="btn ${an.embed ? "btn-ghost" : "btn-primary"}" href="${esc(an.link)}">${esc(t(an.label))}</a>` : ext(an.link, an.embed ? ui("openInGoogle") : t(an.label), `btn ${an.embed ? "btn-ghost" : "btn-primary"}`)) : ""}
+        </div>
       </div>
     </div>`;
   }
@@ -427,6 +431,27 @@
     try { localStorage.setItem("sanad-lang", lang); } catch (e) {}
     render();
     updateThemeButton();
+  });
+
+  // Embedded Google Form in a dialog (announcement boxes with an "embed" link)
+  const formDialog = document.createElement("dialog");
+  formDialog.className = "form-dialog";
+  formDialog.innerHTML = `<div class="fd-head"><strong class="fd-title"></strong><a class="fd-ext" target="_blank" rel="noopener"></a><button type="button" class="fd-close">×</button></div><iframe title=""></iframe>`;
+  document.body.appendChild(formDialog);
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".form-open");
+    if (btn) {
+      formDialog.querySelector(".fd-title").textContent = btn.dataset.title;
+      const extLink = formDialog.querySelector(".fd-ext");
+      extLink.hidden = !btn.dataset.link;
+      extLink.href = btn.dataset.link || "#";
+      extLink.textContent = ui("openInGoogle") + " ↗";
+      formDialog.querySelector(".fd-close").setAttribute("aria-label", ui("close"));
+      const frame = formDialog.querySelector("iframe");
+      frame.title = btn.dataset.title;
+      if (frame.src !== btn.dataset.embed) frame.src = btn.dataset.embed;
+      formDialog.showModal();
+    } else if (e.target === formDialog || e.target.classList.contains("fd-close")) formDialog.close();
   });
 
   // Lightbox for gallery photos, with previous/next

@@ -69,6 +69,8 @@
 
 
 * { box-sizing: border-box; }
+/* elements marked hidden stay hidden, whatever display rule they have */
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body {
   margin: 0;
@@ -733,3 +735,82 @@ html[dir="ltr"] .news-arrow { transform: scaleX(-1); }
   .promo { bottom: 72px; inset-inline: 16px; width: auto; }
 }
 @media (prefers-reduced-motion: reduce) { .promo { transition: none; } }
+
+/* Join form */
+.narrow-wrap { max-width: 820px; }
+.jf { display: grid; gap: 22px; }
+.jf-group {
+  background: var(--surface); border: 1px solid var(--line); border-radius: calc(var(--radius) + 4px);
+  padding: 28px; box-shadow: var(--shadow);
+}
+@media (max-width: 600px) { .jf-group { padding: 20px 16px; } }
+.jf-group h2 { display: flex; align-items: center; gap: 12px; font-size: 1.25rem; margin: 0 0 18px; }
+.jf-step {
+  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%;
+  background: var(--primary); color: var(--primary-ink); font-size: .95rem; flex: none;
+}
+.jf-grid { display: grid; gap: 18px 20px; }
+@media (min-width: 680px) { .jf-grid { grid-template-columns: 1fr 1fr; } .jf-grid > fieldset, .jf-grid > .jf-field:has(textarea) { grid-column: 1 / -1; } }
+.jf-field { display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 0; border: 0; min-width: 0; }
+.jf-label { font-weight: 600; font-size: .95rem; padding: 0; }
+.jf-req { color: var(--accent); }
+.jf-opt { color: var(--muted); font-weight: 400; font-size: .85rem; }
+.jf input[type="text"], .jf input[type="email"], .jf input[type="tel"], .jf select, .jf textarea {
+  font: inherit; color: var(--ink); background: var(--bg); width: 100%; box-sizing: border-box;
+  border: 1.5px solid var(--line); border-radius: 12px; padding: 11px 14px;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.jf input[dir="ltr"] { text-align: start; }
+html[dir="rtl"] .jf input[dir="ltr"] { text-align: right; }
+.jf textarea { resize: vertical; min-height: 90px; }
+.jf input:focus, .jf select:focus, .jf textarea:focus {
+  outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 20%, transparent);
+}
+.jf-choices { display: flex; flex-wrap: wrap; gap: 10px; }
+.jf-choice { position: relative; cursor: pointer; }
+.jf-choice input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.jf-choice span {
+  display: inline-block; padding: 9px 20px; border-radius: 999px; border: 1.5px solid var(--line);
+  background: var(--bg); font-weight: 500; transition: all .15s ease;
+}
+.jf-choice input:checked + span { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
+.jf-choice input:focus-visible + span { box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 30%, transparent); }
+.jf-error { margin: 0; min-height: 0; color: #b3261e; font-size: .85rem; }
+.jf-field.has-error input, .jf-field.has-error select, .jf-field.has-error textarea { border-color: #b3261e; }
+.jf-footer { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.jf-submit { min-width: 180px; font-size: 1.05rem; padding: 14px 32px; }
+.jf-submit:disabled { opacity: .7; cursor: wait; }
+.jf-send-error { margin: 0; color: #b3261e; }
+.jf-privacy { margin: 0; color: var(--muted); font-size: .88rem; }
+.jf-done {
+  text-align: center; background: var(--surface); border: 1px solid var(--line); border-radius: calc(var(--radius) + 4px);
+  padding: 48px 24px; box-shadow: var(--shadow);
+}
+.jf-done-icon {
+  display: grid; place-items: center; width: 72px; height: 72px; margin: 0 auto 12px; border-radius: 50%;
+  background: var(--active-bg); color: var(--active); font-size: 2.2rem; font-weight: 700;
+}
+
+/* Announcement buttons + embedded form dialog */
+.announce-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.form-dialog {
+  width: min(760px, 100vw); height: min(92vh, 1000px); max-width: 100vw; max-height: 100vh;
+  padding: 0; border: 0; border-radius: 20px; overflow: hidden; background: var(--surface);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .35);
+}
+.form-dialog[open] { display: flex; flex-direction: column; }
+.form-dialog::backdrop { background: rgba(12, 16, 10, .7); backdrop-filter: blur(3px); }
+.fd-head { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+.fd-title { flex: 1; min-width: 0; font-family: var(--font-display); font-size: 1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fd-ext { font-size: .88rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.fd-close { width: 36px; height: 36px; border-radius: 50%; border: 0; cursor: pointer; background: var(--bg-tint); color: var(--ink); font-size: 1.4rem; line-height: 1; flex: none; }
+.form-dialog iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+@media (max-width: 600px) { .form-dialog { width: 100vw; height: 100vh; border-radius: 0; } .fd-ext { display: none; } }
+/* hidden must win over display rules above */
+.jf[hidden], .jf-field[hidden], .jf-done[hidden] { display: none !important; }
+button.btn { font: inherit; font-weight: 600; cursor: pointer; }
+.nav .nav-cta[aria-current="page"] { background: var(--primary); color: var(--primary-ink); }
+.jf-field[data-id="347898762"], .jf-field[data-id="456544019"] { grid-column: 1 / -1; }
+.jf-hint { color: var(--muted); font-size: .88rem; margin-top: -2px; }
+.jf-wide { grid-column: 1 / -1; }
+.jf-embed { width: 100%; height: 1400px; border: 0; border-radius: var(--radius); background: #fff; }

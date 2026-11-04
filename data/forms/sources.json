@@ -1,0 +1,7 @@
+{
+  "forms": [
+    { "key": "join", "url": "https://docs.google.com/forms/d/e/1FAIpQLScWx33Md9YNV4vNYIGhpGLdU5R0ZIsxxbKbPrXJoleWdHvAgA/viewform", "google": "https://forms.gle/wwqB7hA7KaAkeSjs6" },
+    { "key": "mentee", "url": "https://docs.google.com/forms/d/e/1FAIpQLSdgveUwP4GYtD2v0tb_-pzpdhNeJg30UftusZ34MaUlCUka2w/viewform", "google": "https://forms.gle/gR5cryMK3obGCvY98" },
+    { "key": "mentor", "url": "https://docs.google.com/forms/d/e/1FAIpQLSdMF1cf1xy1N51ZC4W88bqTLoT5Q_e-C1fBgNHEiaDmV1UNZA/viewform", "google": "https://forms.gle/pZmgAkgdzmGnRtV18" }
+  ]
+}

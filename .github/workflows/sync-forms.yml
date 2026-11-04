@@ -1,0 +1,32 @@
+# Keeps the site's own form pages in step with the Google Forms:
+# reads the live questions daily (and on demand via "Run workflow") and commits any changes.
+name: Sync forms from Google Forms
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # every day, 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the Google Forms
+        run: python3 scripts/sync_forms.py
+      - name: Commit changes and rebuild the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/forms; then echo "Forms unchanged"; exit 0; fi
+          git config user.name "sanad-forms-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/forms
+          git commit -m "Sync forms from Google Forms"
+          git push
+          # pushes made with the workflow token don't trigger a Pages build by themselves
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || true

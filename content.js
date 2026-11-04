@@ -57,6 +57,8 @@ window.SANAD = {
     navFindUs: { ar: "تابعونا", en: "Find us" },
     navFaq: { ar: "أسئلة شائعة", en: "FAQ" },
     popupDetails: { ar: "التفاصيل", en: "Details" },
+    fillHere: { ar: "املأ/ي النموذج هنا", en: "Fill in the form here" },
+    openInGoogle: { ar: "فتح في Google Forms", en: "Open in Google Forms" },
     newsKicker: { ar: "آخر الأخبار", en: "Latest news" },
     newsTitle: { ar: "ما الجديد في سند؟", en: "What's new at SANAD?" },
     readMore: { ar: "اقرأوا المزيد", en: "Read more" },
