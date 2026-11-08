@@ -1,0 +1,17 @@
+{
+  "links": {
+    "instagram": "https://www.instagram.com/we.are.sanad/",
+    "linkedin": "https://www.linkedin.com/company/sanad-community/",
+    "youtube": "",
+    "joinForm": "https://forms.gle/wwqB7hA7KaAkeSjs6",
+    "whatsapp": "",
+    "volunteerForm": "",
+    "email": "sanad.research.community@gmail.com"
+  },
+  "popup": {
+    "enabled": true,
+    "program": "mentorship",
+    "delaySeconds": 3,
+    "maxShows": 5
+  }
+}

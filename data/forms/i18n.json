@@ -1,0 +1,571 @@
+{
+  "forms": [
+    {
+      "key": "join",
+      "kicker": {
+        "ar": "انضموا إلينا",
+        "en": "Join us"
+      },
+      "title": {
+        "ar": "انضموا إلى مجتمع سند",
+        "en": "Join the SANAD community"
+      },
+      "intro": {
+        "ar": "املأوا النموذج وسنضيفكم إلى مجتمع سند على واتساب، حيث نعلن عن الفعاليات ونتشارك الفرص. يجمع المجتمع الطلاب والباحثين العرب في المراحل الأكاديمية المتقدّمة في مجالات العلوم والتكنولوجيا والهندسة والرياضيات.",
+        "en": "Fill in the form and we'll add you to the SANAD WhatsApp community, where we announce events and share opportunities. The community brings together Arab students and researchers at advanced academic stages in STEM."
+      },
+      "done": {
+        "ar": "وصلنا طلبكم. سنضيفكم إلى مجتمع سند على واتساب قريبًا.",
+        "en": "We've received your request and will add you to the SANAD WhatsApp community soon."
+      },
+      "groups": [
+        {
+          "ar": "معلومات شخصية وأكاديمية",
+          "en": "About you"
+        },
+        {
+          "en": "Field & involvement"
+        }
+      ],
+      "fields": [
+        {
+          "id": "244587568",
+          "en": "Notes"
+        },
+        {
+          "id": "294359830",
+          "en": "Year of birth"
+        },
+        {
+          "id": "347898762",
+          "en": "Academic institution",
+          "options": [
+            {
+              "value": "الجامعة العبرية",
+              "en": "Hebrew University"
+            },
+            {
+              "value": "جامعة بار ايلان",
+              "en": "Bar-Ilan University"
+            },
+            {
+              "value": "جامعة بئر السبع",
+              "en": "Ben-Gurion University"
+            },
+            {
+              "value": "جامعة حيفا",
+              "en": "University of Haifa"
+            },
+            {
+              "value": "جامعة تل أبيب",
+              "en": "Tel Aviv University"
+            },
+            {
+              "value": "معهد وايزمان للعلوم",
+              "en": "Weizmann Institute of Science"
+            },
+            {
+              "value": "التخنيون",
+              "en": "Technion"
+            },
+            {
+              "value": "جامعة تل حاي",
+              "en": "Tel-Hai College"
+            },
+            {
+              "value": "الجامعة المفتوحة",
+              "en": "Open University"
+            },
+            {
+              "value": "خارج البلاد",
+              "en": "Abroad"
+            },
+            {
+              "value": "آخر",
+              "en": "Other"
+            }
+          ],
+          "wide": true
+        },
+        {
+          "id": "456544019",
+          "en": "Name of the institution",
+          "showIf": {
+            "id": "347898762",
+            "value": "آخر"
+          },
+          "wide": true
+        },
+        {
+          "id": "594189477",
+          "en": "Hometown"
+        },
+        {
+          "id": "1165364159",
+          "en": "Phone number"
+        },
+        {
+          "id": "1224571596",
+          "en": "Would you like to help organize future activities?",
+          "options": [
+            {
+              "value": "نعم",
+              "en": "Yes"
+            },
+            {
+              "value": "لا",
+              "en": "No"
+            },
+            {
+              "value": "ربما",
+              "en": "Maybe"
+            }
+          ]
+        },
+        {
+          "id": "1235856515",
+          "en": "Specialization (e.g. biology)"
+        },
+        {
+          "id": "1324143509",
+          "en": "University email"
+        },
+        {
+          "id": "1383925850",
+          "en": "Field",
+          "options": [
+            {
+              "value": "الهندسة",
+              "en": "Engineering"
+            },
+            {
+              "value": "العلوم الدقيقة",
+              "en": "Exact sciences"
+            },
+            {
+              "value": "العلوم الطبيعية",
+              "en": "Natural sciences"
+            },
+            {
+              "value": "الرياضيات وعلوم الحاسوب",
+              "en": "Mathematics & computer science"
+            },
+            {
+              "value": "آخر",
+              "en": "Other"
+            }
+          ]
+        },
+        {
+          "id": "1408863201",
+          "en": "Full name (in Arabic)"
+        },
+        {
+          "id": "1555417262",
+          "en": "Academic level",
+          "options": [
+            {
+              "value": "بكالوريوس - لقب أول (سنة أخيرة)",
+              "en": "Bachelor's (final year)"
+            },
+            {
+              "value": "ماجستير - لقب ثاني",
+              "en": "Master's"
+            },
+            {
+              "value": "دكتوراه  - لقب ثالث",
+              "en": "PhD"
+            },
+            {
+              "value": "باحث\\ة ما بعد الدكتوراه - جامعة داخل البلاد",
+              "en": "Postdoc, in Israel"
+            },
+            {
+              "value": "باحث\\ة ما بعد الدكتوراه - جامعة خارج البلاد",
+              "en": "Postdoc, abroad"
+            }
+          ]
+        },
+        {
+          "id": "1639290763",
+          "en": "Academic status",
+          "options": [
+            {
+              "value": "طالب/ة",
+              "en": "Student"
+            },
+            {
+              "value": "خريج/ة",
+              "en": "Graduate"
+            }
+          ]
+        },
+        {
+          "id": "1797157054",
+          "en": "Personal email"
+        }
+      ]
+    },
+    {
+      "key": "mentee",
+      "kicker": {
+        "ar": "سندك — التسجيل",
+        "en": "Sanadak — Registration"
+      },
+      "title": {
+        "ar": "سجّل/ي في «سندك»",
+        "en": "Register for Sanadak"
+      },
+      "intro": {
+        "ar": "برنامج الإرشاد الأكاديمي الشخصي لطلاب وطالبات الماجستير الجدد (2026–2027) في مجالات العلوم والتكنولوجيا والهندسة والرياضيات. سنربطك بمرشد/ة من مرحلة أكاديمية متقدّمة ليكون سندًا لك في بداية مشوارك.",
+        "en": "Personal academic mentoring for new Master's students (2026–2027) in STEM. We'll pair you with a mentor at a more advanced stage to support you at the start of your journey."
+      },
+      "done": {
+        "ar": "وصل تسجيلك في «سندك». سنتواصل معك قريبًا بخصوص المرشد/ة المناسب/ة لك.",
+        "en": "Your Sanadak registration has arrived. We'll be in touch soon about your mentor."
+      },
+      "groups": [
+        {
+          "ar": "معلومات عامة",
+          "en": "About you"
+        }
+      ],
+      "fields": [
+        {
+          "id": "426729327",
+          "en": "Study track / academic program"
+        },
+        {
+          "id": "754564011",
+          "en": "Personal email"
+        },
+        {
+          "id": "1095345918",
+          "en": "Research supervisor's name"
+        },
+        {
+          "id": "1282659366",
+          "en": "What is your research topic or question?"
+        },
+        {
+          "id": "1406780858",
+          "en": "Are there topics you'd like guidance or support on?"
+        },
+        {
+          "id": "1536111105",
+          "en": "Academic institution",
+          "options": [
+            {
+              "value": "الجامعة العبرية",
+              "en": "Hebrew University"
+            },
+            {
+              "value": "جامعة تل ابيب",
+              "en": "Tel Aviv University",
+              "ar": "جامعة تل أبيب"
+            },
+            {
+              "value": "معهد التخنيون",
+              "en": "Technion"
+            },
+            {
+              "value": "معهد وايزمان",
+              "en": "Weizmann Institute"
+            },
+            {
+              "value": "جامعة بار ايلان",
+              "en": "Bar-Ilan University"
+            },
+            {
+              "value": "جامعة حيفا",
+              "en": "University of Haifa"
+            },
+            {
+              "value": "جامعة بئر السبع",
+              "en": "Ben-Gurion University"
+            },
+            {
+              "value": "جامعة تل حاي",
+              "en": "Tel-Hai College"
+            },
+            {
+              "value": "الجامعة المفتوحة",
+              "en": "Open University"
+            }
+          ]
+        },
+        {
+          "id": "1767683584",
+          "en": "Did you start your Master's this academic year (2026–2027)?",
+          "options": [
+            {
+              "value": "نعم",
+              "en": "Yes"
+            }
+          ]
+        },
+        {
+          "id": "1895330896",
+          "en": "Field of study"
+        },
+        {
+          "id": "2023356928",
+          "en": "Anything else you'd like to share with us?"
+        },
+        {
+          "id": "2084427860",
+          "en": "Phone number"
+        },
+        {
+          "id": "2102994615",
+          "en": "Full name"
+        }
+      ]
+    },
+    {
+      "key": "mentor",
+      "kicker": {
+        "ar": "سندك — المرشدون",
+        "en": "Sanadak — Mentors"
+      },
+      "title": {
+        "ar": "كونوا سندًا للآخرين",
+        "en": "Be a sanad for others"
+      },
+      "intro": {
+        "ar": "نبحث عن مرشدين ومرشدات من طلاب الماجستير (السنة الثانية فما فوق)، وطلاب الدكتوراه، وباحثي ما بعد الدكتوراه، لمرافقة طلاب الماجستير الجدد ومساندتهم في بداية مسيرتهم الأكاديمية.",
+        "en": "We're looking for mentors: Master's students (second year and beyond), PhD students and postdocs, to support new Master's students at the start of their academic journey."
+      },
+      "done": {
+        "ar": "شكرًا على استعدادك لتكون/ي سندًا! سنتواصل معك قريبًا.",
+        "en": "Thank you for volunteering to be a sanad! We'll be in touch soon."
+      },
+      "groups": [
+        {
+          "ar": "معلومات عامة",
+          "en": "About you"
+        },
+        {
+          "en": "Why mentoring?"
+        },
+        {
+          "en": "Commitment"
+        }
+      ],
+      "fields": [
+        {
+          "id": "84090201",
+          "en": "Field of study"
+        },
+        {
+          "id": "145977924",
+          "en": "Academic level",
+          "options": [
+            {
+              "value": "طالب\\ة ماجستير (في السنة الثانية على الأقل)",
+              "en": "Master's student (2nd year or later)"
+            },
+            {
+              "value": "طالب\\ة دوكتوراه",
+              "en": "PhD student",
+              "ar": "طالب/ة دكتوراه"
+            },
+            {
+              "value": "باحث\\ة ما بعد الدكتوراه",
+              "en": "Postdoc"
+            }
+          ]
+        },
+        {
+          "id": "218489903",
+          "en": "Personal email"
+        },
+        {
+          "id": "268548096",
+          "en": "How often can you meet?",
+          "options": [
+            {
+              "value": "لقاء واحد شهريًا",
+              "en": "Once a month"
+            },
+            {
+              "value": "لقاءان شهريًا",
+              "en": "Twice a month"
+            },
+            {
+              "value": "أكثر من لقاءين شهريًا",
+              "en": "More than twice a month"
+            },
+            {
+              "value": "حسب الحاجة وبالتنسيق مع الطالب/ة",
+              "en": "As needed, coordinated with the mentee"
+            }
+          ]
+        },
+        {
+          "id": "397420620",
+          "en": "Would you join general events for mentors and mentees?",
+          "options": [
+            {
+              "value": "نعم",
+              "en": "Yes"
+            },
+            {
+              "value": "لا",
+              "en": "No"
+            }
+          ]
+        },
+        {
+          "id": "420274197",
+          "en": "Would you prefer a mentee from your own institution?",
+          "options": [
+            {
+              "value": "نعم",
+              "en": "Yes"
+            },
+            {
+              "value": "لا",
+              "en": "No"
+            },
+            {
+              "value": "ليس بالضرورة",
+              "en": "Not necessarily"
+            }
+          ]
+        },
+        {
+          "id": "807401781",
+          "en": "Which meeting format suits you?",
+          "options": [
+            {
+              "value": "لقاءات وجاهية",
+              "en": "In person"
+            },
+            {
+              "value": "لقاءات عبر الإنترنت",
+              "en": "Online"
+            }
+          ]
+        },
+        {
+          "id": "936779992",
+          "en": "Year in your degree"
+        },
+        {
+          "id": "1046673618",
+          "en": "Academic institution",
+          "options": [
+            {
+              "value": "الجامعة العبرية",
+              "en": "Hebrew University"
+            },
+            {
+              "value": "جامعة تل ابيب",
+              "en": "Tel Aviv University",
+              "ar": "جامعة تل أبيب"
+            },
+            {
+              "value": "معهد التخنيون",
+              "en": "Technion"
+            },
+            {
+              "value": "معهد وايزمان",
+              "en": "Weizmann Institute"
+            },
+            {
+              "value": "جامعة بار ايلان",
+              "en": "Bar-Ilan University"
+            },
+            {
+              "value": "جامعة حيفا",
+              "en": "University of Haifa"
+            },
+            {
+              "value": "جامعة بئر السبع",
+              "en": "Ben-Gurion University"
+            },
+            {
+              "value": "جامعة تل حاي",
+              "en": "Tel-Hai College"
+            },
+            {
+              "value": "الجامعة المفتوحة",
+              "en": "Open University"
+            }
+          ]
+        },
+        {
+          "id": "1494169841",
+          "en": "Full name"
+        },
+        {
+          "id": "1525133614",
+          "en": "Phone number"
+        },
+        {
+          "id": "1582318205",
+          "en": "Would you prefer a mentee from a field close to yours?",
+          "options": [
+            {
+              "value": "نعم",
+              "en": "Yes"
+            },
+            {
+              "value": "لا",
+              "en": "No"
+            },
+            {
+              "value": "ليس بالضرورة",
+              "en": "Not necessarily"
+            }
+          ]
+        },
+        {
+          "id": "1823743229",
+          "en": "How long can you commit to volunteering?",
+          "options": [
+            {
+              "value": "فصل دراسي واحد",
+              "en": "One semester"
+            },
+            {
+              "value": "فصلان دراسيان",
+              "en": "Two semesters"
+            },
+            {
+              "value": "غير متأكد/ة حاليًا",
+              "en": "Not sure yet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "meetup",
+      "kicker": {
+        "ar": "اللقاءات المحلية",
+        "en": "Local meetups"
+      },
+      "title": {
+        "ar": "التسجيل للقاء سند المحلي",
+        "en": "Register for a SANAD local meetup"
+      },
+      "intro": {
+        "ar": "لقاء غير رسمي للتعارف وتبادل الخبرات بين الباحثات والباحثين العرب في الجامعة. سجّلوا لنحجز لكم مكانًا ونرتّب الطعام.",
+        "en": "An informal get-together for Arab researchers on campus to meet and share experiences. Register so we can save you a seat and arrange the food."
+      },
+      "done": {
+        "ar": "سجّلناكم! ستصلكم رسالة تأكيد ودعوة إلى التقويم بالبريد الإلكتروني. نراكم هناك 🌿",
+        "en": "You're registered! A confirmation and a calendar invite are on their way to your email. See you there 🌿"
+      },
+      "groups": [
+        {
+          "ar": "تفاصيلكم",
+          "en": "Your details"
+        }
+      ],
+      "fields": []
+    }
+  ]
+}

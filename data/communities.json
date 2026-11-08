@@ -1,0 +1,63 @@
+{
+  "communities": [
+    {
+      "name": {
+        "ar": "معهد وايزمان للعلوم",
+        "en": "Weizmann Institute of Science"
+      },
+      "short": {
+        "ar": "معهد وايزمان",
+        "en": "Weizmann Institute"
+      },
+      "status": "active"
+    },
+    {
+      "name": {
+        "ar": "جامعة تل أبيب",
+        "en": "Tel Aviv University"
+      },
+      "short": {
+        "ar": "جامعة تل أبيب",
+        "en": "TAU"
+      },
+      "status": "active"
+    },
+    {
+      "name": {
+        "ar": "الجامعة العبرية في القدس",
+        "en": "Hebrew University of Jerusalem"
+      },
+      "short": {
+        "ar": "الجامعة العبرية",
+        "en": "HUJI"
+      },
+      "status": "active"
+    },
+    {
+      "name": {
+        "ar": "معهد التخنيون",
+        "en": "Technion"
+      },
+      "short": {
+        "ar": "التخنيون",
+        "en": "Technion"
+      },
+      "status": "forming",
+      "note": {
+        "ar": "الافتتاح في كانون الأول",
+        "en": "Opening in December"
+      }
+    },
+    {
+      "name": {
+        "ar": "جامعة بن غوريون",
+        "en": "Ben-Gurion University"
+      },
+      "short": {
+        "ar": "بن غوريون",
+        "en": "BGU"
+      },
+      "status": "planned"
+    }
+  ]
+}

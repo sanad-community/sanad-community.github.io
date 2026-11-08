@@ -1,0 +1,96 @@
+{
+  "audience": [
+    {
+      "ar": "طلاب الماجستير",
+      "en": "Master's students"
+    },
+    {
+      "ar": "طلاب الدكتوراه",
+      "en": "PhD students"
+    },
+    {
+      "ar": "باحثو ما بعد الدكتوراه",
+      "en": "Postdocs"
+    },
+    {
+      "ar": "أعضاء الهيئات التدريسية",
+      "en": "Faculty"
+    },
+    {
+      "ar": "المهتمون بالدراسات العليا",
+      "en": "Prospective grad students"
+    }
+  ],
+  "values": [
+    {
+      "name": {
+        "ar": "الدعم المتبادل",
+        "en": "Mutual support"
+      },
+      "text": {
+        "ar": "نساعد بعضنا على تجاوز التحديات الأكاديمية والمهنية.",
+        "en": "Helping each other through academic and professional challenges."
+      }
+    },
+    {
+      "name": {
+        "ar": "الانتماء",
+        "en": "Belonging"
+      },
+      "text": {
+        "ar": "علاقات حقيقية بين باحثين قد يشعرون بالعزلة في مؤسساتهم.",
+        "en": "Real connections between researchers who may feel isolated at their institutions."
+      }
+    },
+    {
+      "name": {
+        "ar": "التعاون",
+        "en": "Collaboration"
+      },
+      "text": {
+        "ar": "تبادل المعرفة عبر التخصصات والجامعات.",
+        "en": "Sharing knowledge across disciplines and universities."
+      }
+    },
+    {
+      "name": {
+        "ar": "التمكين",
+        "en": "Empowerment"
+      },
+      "text": {
+        "ar": "مهارات وثقة وعلاقات تصنع النجاح.",
+        "en": "Skills, confidence and connections to succeed."
+      }
+    },
+    {
+      "name": {
+        "ar": "التمثيل",
+        "en": "Representation"
+      },
+      "text": {
+        "ar": "حضور أوضح للباحثات والباحثين العرب في الأكاديميا.",
+        "en": "Greater visibility for Arab researchers in academia."
+      }
+    },
+    {
+      "name": {
+        "ar": "الإتاحة",
+        "en": "Accessibility"
+      },
+      "text": {
+        "ar": "معلومات وإرشاد وفرص في متناول الجميع.",
+        "en": "Information, mentorship and opportunities within reach."
+      }
+    },
+    {
+      "name": {
+        "ar": "التطوّع",
+        "en": "Volunteerism"
+      },
+      "text": {
+        "ar": "مجتمع مستدام بمسؤولية ومبادرة جماعية.",
+        "en": "A sustainable community built on shared responsibility."
+      }
+    }
+  ]
+}

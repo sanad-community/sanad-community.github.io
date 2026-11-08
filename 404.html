@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الصفحة غير موجودة | SANAD</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/brand/logo-mark.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply a saved light/dark choice before the page paints; otherwise follow the system setting.
+    try { const t = localStorage.getItem("sanad-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" aria-label="SANAD">
+        <img class="brand-logo" src="images/brand/logo-mark.svg" alt="" width="34" height="42">
+        <span class="brand-name">سند <span class="brand-latin">SANAD</span></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <a href="index.html#about" data-t="navAbout"></a>
+        <a href="index.html#communities" data-t="navCommunities"></a>
+        <a href="programs.html" data-t="navPrograms"></a>
+        <a href="team.html" data-t="navTeam"></a>
+        <a href="index.html#faq" data-t="navFaq"></a>
+        <a href="index.html#find-us" data-t="navFindUs"></a>
+        <a href="join.html" class="nav-cta" data-t="navJoin"></a>
+        <button class="lang" type="button" data-t="langSwitch"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section notfound">
+      <div class="wrap notfound-inner">
+        <img class="notfound-logo" src="images/brand/logo-mark.svg" alt="" width="160" height="200">
+        <p class="notfound-code">404</p>
+        <h1 data-t="nfTitle"></h1>
+        <p class="lead" data-t="nfText"></p>
+        <div class="actions">
+          <a href="index.html" class="btn btn-primary" data-t="nfHome"></a>
+          <a href="programs.html" class="btn btn-ghost" data-t="allPrograms"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="find-us" class="section find-us">
+      <div class="wrap">
+        <h2 data-t="findUsTitle"></h2>
+        <p class="muted" data-t="findUsText"></p>
+        <div class="find-grid" id="findUs"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <img class="footer-logo" src="images/brand/logo-h-ar.svg" alt="مجتمع سند للباحثات والباحثين — SANAD">
+        <p class="muted" data-t="footerTagline"></p>
+        <p class="muted" data-t="footerPartners"></p>
+      </div>
+      <div class="social" id="social"></div>
+    </div>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+  <script data-goatcounter="https://sanad-community.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
