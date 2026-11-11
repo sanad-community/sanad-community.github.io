@@ -65,6 +65,18 @@
           "label": "مجال التخصص",
           "required": true,
           "type": "text"
+        },
+        {
+          "id": "1303259138",
+          "label": "سؤال/موضوع البحث",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "id": "590259538",
+          "label": "اسم الباحث الرئيسي (PI)",
+          "required": true,
+          "type": "text"
         }
       ]
     },
